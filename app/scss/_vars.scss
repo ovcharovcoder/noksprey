@@ -2,39 +2,10 @@
 
 $black: #000000;
 $white: #ffffff;
-$accent: #0b1063;
+$default: #0b1063;
+$accent: #ed1622;
 
 // -------------- Fonts ------------------
-
-@mixin lato-400 {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@mixin lato-400-It {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-@mixin lato-500 {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-@mixin lato-600 {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-@mixin lato-700 {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
 
 // -------------- Buttons ----------------
 // >> @include big-btn;
