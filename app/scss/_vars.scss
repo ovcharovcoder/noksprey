@@ -1,0 +1,74 @@
+// -------------- Colors -----------------
+
+$black: #000000;
+$white: #ffffff;
+$accent: #0b1063;
+
+// -------------- Fonts ------------------
+
+@mixin lato-400 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin lato-400-It {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin lato-500 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin lato-600 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin lato-700 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+// -------------- Buttons ----------------
+// >> @include big-btn;
+
+@mixin big-btn {
+  border: none;
+  @include clinicaPro-900;
+  font-size: 1.25rem; // 20px
+  text-transform: uppercase;
+  background-color: $accent;
+  color: $white;
+  padding: 0.9375em 1.25em 0.75em; // 15px 20px 12px
+  cursor: pointer;
+}
+
+@mixin small-btn {
+  border: none;
+  @include clinicaPro-900;
+  font-size: 0.8125rem; // 13px
+  text-transform: uppercase;
+  background-color: $accent;
+  color: $white;
+  padding: 0.625em 0.75em; // 10px 12px
+  cursor: pointer;
+}
+
+// -------------- Title ------------------
+// >> @include title;
+
+@mixin title {
+  @include clinicaPro-900;
+  font-size: 1.625rem; // 26px
+  color: $default;
+  line-height: normal;
+  font-weight: normal;
+  font-style: normal;
+}
