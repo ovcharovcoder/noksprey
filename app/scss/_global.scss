@@ -10,4 +10,116 @@ body {
   font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.45;
   color: $white;
+  font-size: 17px;
+}
+
+.noksprey-title {
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 70px;
+}
+
+.noksprey-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.noksprey-list {
+  list-style: none;
+}
+
+.noksprey-text {
+  padding-left: 10px;
+}
+
+.noksprey__list-item + li {
+  padding-top: 10px;
+}
+
+.noksprey__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.noksprey__item {
+  max-width: 768px;
+  width: 100%;
+}
+
+// .noksprey__item-img {
+//   margin-top: 151px;
+// }
+
+.noksprey__list {
+  list-style: none;
+}
+
+.noksprey__item-text,
+.noksprey__list,
+.noksprey__text {
+  margin-top: 20px;
+}
+
+.noksprey__item-text {
+  max-width: 734px;
+  width: 100%;
+}
+
+.noksprey__note {
+  font-size: 12px;
+  font-style: italic;
+  padding: 20px 0 40px;
+}
+
+.noksprey__buttons {
+  padding-top: 20px;
+}
+
+.noksprey__btn-link {
+  background-color: transparent;
+  padding: 20px 30px;
+  border: 2px solid $default;
+  border-radius: 35px;
+  font-size: 14px;
+}
+
+.btn-link-accent {
+  background-color: $default;
+  padding: 20px 30px;
+  border: none;
+  color: $white;
+  border-radius: 35px;
+  font-size: 14px;
+}
+
+.noksprey__btn-link {
+  margin-right: 5px;
+}
+
+.noksprey__buttons {
+  padding-top: 20px;
+}
+
+.noksprey__note {
+  padding: 20px 0 50px;
+}
+
+.noksprey__list-text {
+  margin-left: 10px;
+}
+
+.noksprey__list-item {
+  padding-left: 10px;
+}
+
+.noksprey__list-item {
+  position: relative;
+}
+
+.noksprey__list-text {
+  position: absolute;
+  left: 52px;
+  top: 6px;
 }

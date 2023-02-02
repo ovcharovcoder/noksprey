@@ -56,12 +56,14 @@
 
 .promo {
   position: relative;
-  height: 94vh;
+  height: 85vh;
+  background-position: top center;
+  background-size: cover;
 
   &__title {
     font-size: 4.1875rem;
     font-weight: 700;
-    padding-top: 20px;
+    padding-top: 116px;
     text-transform: uppercase;
   }
 
@@ -123,6 +125,86 @@
     top: 112px;
     left: 127px;
   }
+}
+
+.about {
+  background-position: 20% center;
+  background-size: cover;
+}
+
+.noksprey_aqua {
+  color: $default;
+}
+
+.noksprey_aqua__item {
+  max-width: 670px;
+}
+.promotion__title {
+  font-size: 42px;
+}
+
+.promotion__item {
+  margin-right: -152px;
+}
+
+.noksprey_silver {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(101, 102, 102, 0.3),
+    rgba(255, 255, 255, 1)
+  );
+}
+
+.noksprey_silver__inner {
+  color: $default;
+}
+
+.promotion__img {
+  margin-top: 60px;
+}
+
+.noksprey_silver__item {
+  max-width: 630px;
+}
+
+.noksprey__item-img {
+  max-width: 400px;
+}
+
+.noksprey_bottom_note {
+  font-size: 12px;
+  font-weight: 400;
+  color: $default;
+}
+
+.noksprey_bottom_warning-item,
+.noksprey_address,
+.noksprey_nox {
+  margin-top: 20px;
+}
+
+.middle-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.footer {
+  font-size: 12px;
+  font-weight: 400;
+  color: $default;
+}
+
+.noksprey__copy {
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.noksprey__create {
+  margin-top: 20px;
+}
+
+.noksprey_bottom_warning-item {
+  margin-top: 30px;
 }
 
 // ------------------- Імпорт файлу стилів адаптиву -----------------
