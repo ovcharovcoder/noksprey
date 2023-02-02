@@ -56,7 +56,7 @@
 
 .promo {
   position: relative;
-  height: 85vh;
+  height: 95vh;
   background-position: top center;
   background-size: cover;
 
@@ -177,6 +177,26 @@
   color: $default;
 }
 
+.about__item {
+  max-width: 780px;
+}
+
+.about__inner {
+  position: relative;
+}
+
+.about__item-img {
+  position: absolute;
+  top: 138px;
+  right: -93px;
+}
+
+.about__img {
+  max-width: 386px;
+  width: 100%;
+  height: auto;
+}
+
 .noksprey_bottom_warning-item,
 .noksprey_address,
 .noksprey_nox {
@@ -201,10 +221,21 @@
 
 .noksprey__create {
   margin-top: 20px;
+  padding-bottom: 150px;
 }
 
 .noksprey_bottom_warning-item {
   margin-top: 30px;
+}
+
+.footer__img {
+  padding: 10px 10px 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 99%;
+  background-color: white;
 }
 
 // ------------------- Імпорт файлу стилів адаптиву -----------------
