@@ -13,15 +13,25 @@ body {
   font-size: 17px;
 }
 
+sap {
+  text-transform: lowercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
 .noksprey-title {
   font-size: 48px;
   font-weight: 700;
   padding-top: 70px;
+  text-transform: uppercase;
 }
 
 .noksprey-subtitle {
   font-size: 24px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .noksprey-list {
@@ -83,7 +93,6 @@ body {
 
 .btn-link-accent {
   background-color: $default;
-  padding: 20px 30px;
   border: none;
   color: $white;
   border-radius: 35px;
@@ -92,6 +101,7 @@ body {
 
 .noksprey__btn-link {
   margin-right: 5px;
+  padding: 18px 50px;
 }
 
 .noksprey__buttons {
@@ -108,7 +118,6 @@ body {
 
 .noksprey__list-item {
   padding-left: 10px;
-  padding-bottom: 25px;
 }
 
 .noksprey__list-item {

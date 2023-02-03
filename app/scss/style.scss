@@ -28,6 +28,9 @@
   font-size: 1em;
   padding: 20px 40px;
   color: $black;
+  background-color: $white;
+  position: relative;
+  z-index: 10;
 
   &__inner,
   &__item {
@@ -45,6 +48,14 @@
     margin-right: 40px;
   }
 
+  &__menu-item {
+    transition: all 0.3s;
+  }
+
+  &__menu-item:hover {
+    border-bottom: 2px solid $default;
+  }
+
   &__find-link {
     font-size: 0.875rem;
     padding: 10px 30px;
@@ -55,9 +66,8 @@
 }
 
 .promo {
-  position: relative;
-  height: 95vh;
-  background-position: top center;
+  height: 70vh;
+  background-position: 50% center;
   background-size: cover;
 
   &__title {
@@ -125,6 +135,14 @@
     top: 112px;
     left: 127px;
   }
+}
+
+.kids__item-img {
+  object-fit: cover;
+}
+
+.kids__block-image {
+  right: -30px;
 }
 
 .about {
@@ -234,9 +252,120 @@
   bottom: 0;
   left: 0;
   right: 0;
-  width: 99%;
+  width: 99.2%;
   background-color: white;
 }
 
+// Kids
+
+.kids__subtitle {
+  max-width: 850px;
+}
+
+.kids__block-img {
+  max-width: 418px;
+}
+
+.kids__item {
+  margin: 0 auto;
+}
+
+.kids__item-img {
+  max-width: 500;
+  height: 346px;
+}
+
+.noksprey-hildren__inner {
+  color: $white;
+}
+
+.noksprey-hildren {
+  background-position: 30% center;
+}
+
+.kids-promo {
+  height: 86vh;
+}
+
+.kids_botton_note {
+  margin-bottom: 100px;
+}
+
+.kids_bottom_note-text {
+  padding: 70px 0;
+}
+
+.instructions_botton_note {
+  margin-bottom: 0;
+}
+
+.instructions_bottom_note-text {
+  padding-bottom: 25px;
+}
+
+.instructions-promo {
+  background-position: top 16% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.instructions__img {
+  width: 268px;
+  height: 317px;
+}
+
+.instructions__inner {
+  display: flex;
+  padding: 50px 0;
+  gap: 0 50px;
+}
+
+.instructions__item {
+  text-align: center;
+  width: 288px;
+}
+
+.instructions__text {
+  font-weight: 700;
+}
+
+.instructions-btn {
+  padding: 12px 33px;
+}
+
+.buy_promo {
+  padding-bottom: 0;
+}
+
+.buy__text {
+  padding-top: 30px;
+}
+
+.buy__items {
+  background-color: $white;
+}
+
+.buy__item {
+  padding: 20px 17px;
+  padding-bottom: 0;
+}
+
+.buy__text {
+  color: $default;
+}
+
+.buy__img {
+  width: 255px;
+  height: 262px;
+}
+
+.buy__btn {
+  padding-bottom: 30px;
+}
+
+.buy__copy {
+  padding-bottom: 170px;
+}
 // ------------------- Імпорт файлу стилів адаптиву -----------------
 @import "media";
