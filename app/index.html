@@ -12,14 +12,21 @@ E-mail автора: datoshcode@gmail.com;
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Головна</title>
-    <link rel="stylesheet" href="css/style.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header class="header">
@@ -33,10 +40,10 @@ E-mail автора: datoshcode@gmail.com;
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-item">
-                <a class="header__menu-link" href="">Про Нокспрей</a>
+                <a class="header__menu-link" href="#">Про Нокспрей</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="">Інструкції</a>
+                <a class="header__menu-link" href="#">Інструкції</a>
               </li>
             </ul>
           </nav>
@@ -56,43 +63,57 @@ E-mail автора: datoshcode@gmail.com;
       >
         <div class="container">
           <div class="promo__inner">
-            <h1 class="promo__title">Нокспрей</h1>
-            <h2 class="promo__subtitle">
-              Лінійка засобів для лікувуання<sup>1</sup>нежиттю
-              <span>від SPERCO</span>
-            </h2>
-            <div class="promo__item">
-              <img
-                class="promo__item-img"
-                src="images/promo/promo_img.png"
-                alt="
+            <div class="promo__content">
+              <h1 class="promo__title wow bounceInDown">Нокспрей</h1>
+              <h2
+                class="promo__subtitle wow bounceInDown animate__animated animate__bounce animate__delay-1s"
+              >
+                Лінійка засобів для лікування<sup>1</sup> нежитю
+                <span>від SPERCO</span>
+              </h2>
+              <!-- Parallax img -->
+              <div
+                class="promo__item parallax__imgbox wow bounceInDown animate__animated animate__bounce animate__delay-2s"
+              >
+                <img
+                  class="promo__item-img parallax__img-big"
+                  id="parallaxImg1"
+                  src="images/promo/promo_img.png"
+                  alt="
           medicine boxes"
-              />
+                />
+              </div>
             </div>
+            <!-- Parallax img /end -->
 
-            <div class="promo__block-image">
-              <img
-                class="promo__block-img"
-                src="images/promo/promo_face.png"
-                alt="face"
-              />
-              <span class="promo__block-item_1"></span>
-              <div class="promo__block-item_2">
+            <!-- Face img -->
+            <div class="promo__block-image shows">
+              <div class="promo__block-image-wrapper-2">
+                <img
+                  class="promo__block-img"
+                  src="images/promo/promo_face.png"
+                  alt="face"
+                />
+              </div>
+              <div class="promo__block-image-wrapper-1">
+                <span class="promo__block-item_1"></span>
+              </div>
+
+              <div class="promo__block-item_2 promo__block-image-wrapper-3">
                 <img
                   class="promo__block-item-img"
                   src="images/promo_decor_circle.png"
-                  alt="
-        big red circle"
+                  alt="big red circle"
                 />
               </div>
-              <div class="promo__block-item_3">
+              <div class="promo__block-item_3 promo__block-image-wrapper-4">
                 <img
                   class="promo__block-item-img"
                   src="images/promo_deror_simple_semicircle.png"
                   alt="red semicircle"
                 />
               </div>
-              <div class="promo__block-item_4">
+              <div class="promo__block-item_4 promo__block-image-wrapper-5">
                 <img
                   class="promo__block-item-img"
                   src="images/promo_decore_big_semicirle.png"
@@ -100,6 +121,7 @@ E-mail автора: datoshcode@gmail.com;
                 />
               </div>
             </div>
+            <!-- Face img /end -->
           </div>
         </div>
       </section>
@@ -180,12 +202,15 @@ E-mail автора: datoshcode@gmail.com;
                 </p>
               </div>
             </div>
-            <div class="about__item-img noksprey__item-img">
-              <img
-                class="about__img"
-                src="images/noksprey_about/noksprey_img.png"
-                alt=""
-              />
+            <!-- Parallax img -->
+            <div class="noksprey__item-img parallax__imgbox">
+              <div
+                class="about__img parallax__img parallaxImg"
+                id="parallaxImg2"
+                style="
+                  background-image: url(images/noksprey_about/noksprey_img.png);
+                "
+              ></div>
             </div>
           </div>
         </div>
@@ -201,12 +226,15 @@ E-mail автора: datoshcode@gmail.com;
       >
         <div class="middle-container">
           <div class="noksprey_active__inner noksprey__inner">
-            <div class="noksprey_active__item-img noksprey__item-img">
-              <img
-                class="noksprey_active__img"
-                src="images/noksprey_active/nokprey_active_img.png"
-                alt=""
-              />
+            <!-- Parallax img -->
+            <div class="about__item-img noksprey__item-img parallax__imgbox">
+              <div
+                class="about__img parallax__img"
+                id="parallax-img"
+                style="
+                  background-image: url(images/noksprey_active/nokprey_active_img.png);
+                "
+              ></div>
             </div>
             <div class="noksprey_active__item noksprey__item">
               <h2 class="noksprey_active__title noksprey-title">НОКСПРЕЙ</h2>
@@ -362,6 +390,7 @@ E-mail автора: datoshcode@gmail.com;
             <div class="noksprey_aqua__item-img noksprey__item-img">
               <img
                 class="noksprey_aqua__img"
+                id="parallax-img"
                 src="images/noksprey_aqua/nokprey_agua_img.png"
                 alt=""
               />
@@ -586,7 +615,7 @@ E-mail автора: datoshcode@gmail.com;
         <img class="footer__img" src="images/footer/footer__img.svg" alt="" />
       </div>
     </footer>
-
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
