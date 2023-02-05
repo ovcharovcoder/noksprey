@@ -1,32 +1,22 @@
-<!-- 
-Вебсайт розроблено за графічним макетом "Noksprey".
-Автор розробки вебсайту: Андрій Овчаров;
-E-mail автора: datoshcode@gmail.com;
-Дата розробки вебсайту: 01.02.2023 по 08.02.2023. 
--->
-
 <!DOCTYPE html>
 <html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Головна</title>
-
+    <title>Дитячий</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-
   <body>
     <!-- Header -->
     <header class="header">
@@ -40,10 +30,10 @@ E-mail автора: datoshcode@gmail.com;
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Про Нокспрей</a>
+                <a class="header__menu-link" href="">Про Нокспрей</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Інструкції</a>
+                <a class="header__menu-link" href="">Інструкції</a>
               </li>
             </ul>
           </nav>
@@ -58,40 +48,37 @@ E-mail автора: datoshcode@gmail.com;
     <main>
       <!-- Promo -->
       <section
-        class="promo"
-        style="background-image: url(images/promo/promo_bg.jpg)"
+        class="promo kids-promo"
+        style="
+          background-image: url(images/nosprey_kids/nosprey_kids_promo/nosprey_kids_promo_bg.jpg);
+        "
       >
         <div class="container">
           <div class="promo__inner">
-            <div class="promo__content">
-              <h1 class="promo__title wow bounceInDown">Нокспрей</h1>
-              <h2
-                class="promo__subtitle wow bounceInDown animate__animated animate__bounce animate__delay-1s"
-              >
-                Лінійка засобів для лікування<sup>1</sup> нежитю
-                <span>від SPERCO</span>
-              </h2>
-              <!-- Parallax img -->
-              <div
-                class="promo__item parallax__imgbox wow bounceInDown animate__animated animate__bounce animate__delay-2s"
-              >
-                <img
-                  class="promo__item-img parallax__img-big"
-                  id="parallaxImg1"
-                  src="images/promo/promo_img.png"
-                  alt="
+            <h1 class="promo__title wow bounceInDown">Нокспрей</h1>
+            <h2
+              class="promo__subtitle kids__subtitle wow bounceInDown animate__animated animate__bounce animate__delay-1s"
+            >
+              дитяча лінійка для лікування<sup>1</sup> нежитю
+              <span class="text-lowercase">від</span> sperco
+            </h2>
+            <div
+              class="promo__item parallax__imgbox wow bounceInDown animate__animated animate__bounce animate__delay-2s"
+            >
+              <img
+                class="promo__item-img kids__item-img"
+                id="parallaxImg2"
+                src="images/nosprey_kids/nosprey_kids_promo/prom_img.png"
+                alt="
           medicine boxes"
-                />
-              </div>
+              />
             </div>
-            <!-- Parallax img /end -->
 
-            <!-- Face img -->
-            <div class="promo__block-image shows">
+            <div class="promo__block-image kids__block-image shows">
               <div class="promo__block-image-wrapper-2">
                 <img
-                  class="promo__block-img"
-                  src="images/promo/promo_face.png"
+                  class="promo__block-img kids__block-img"
+                  src="images/nosprey_kids/nosprey_kids_promo/noprey_kids_promo_face.png"
                   alt="face"
                 />
               </div>
@@ -103,7 +90,8 @@ E-mail автора: datoshcode@gmail.com;
                 <img
                   class="promo__block-item-img"
                   src="images/promo_decor_circle.png"
-                  alt="big red circle"
+                  alt="
+        big red circle"
                 />
               </div>
               <div class="promo__block-item_3 promo__block-image-wrapper-4">
@@ -121,496 +109,197 @@ E-mail автора: datoshcode@gmail.com;
                 />
               </div>
             </div>
-            <!-- Face img /end -->
           </div>
         </div>
       </section>
       <!-- Promo /end -->
-
-      <!-- About -->
+      <!-- Noksprey baby -->
       <section
-        class="about"
-        style="background-image: url(images/noksprey_about/noksprey_bg.jpg)"
+        class="noksprey_active"
+        style="
+          background-image: url(images/nosprey_kids/nosprey_baby/nospry_baby_bg.jpg);
+        "
       >
         <div class="middle-container">
-          <div class="about__inner">
-            <div class="about__item noksprey__item">
-              <h2 class="about__title noksprey-title">НОКСПРЕЙ</h2>
-              <h3 class="about__subtitle noksprey-subtitle">
-                ПРИ НЕЖИТЮ ДОПОМАГАЄ – ШВИДКО<sup>2</sup> НІС
-                ПРОБИВАЄ<sup>4</sup>!
-              </h3>
-              <div class="about__item-text noksprey__item-text">
-                <div class="about__text noksprey__text">
-                  Спрей для полегшення закладеності носа у дітей від 6 років та
-                  дорослих. Діючою речовиною препарату Нокспрей є оксиметазолін,
-                  який:
+          <div class="noksprey__inner">
+            <!-- Parallax img -->
+            <div class="noksprey__item-img parallax__imgbox">
+              <div
+                class="noksprey_active__img parallax__img"
+                id="parallaxImg3"
+                style="
+                  background-image: url(images/nosprey_kids/nosprey_baby/nosprey_baby_img.png);
+                "
+              ></div>
+            </div>
+            <div class="noksprey__item">
+              <h2 class="noksprey-title">НОКСПРЕЙ МАЛЮК</h2>
+              <div class="noksprey__item-text">
+                <div class="noksprey__text-top">
+                  Краплі для полегшення закладеності носа у дітей від самого
+                  народження до 1 року. Тривалість дії до 12 годин. При
+                  місцевому інтраназальному застосуванні в терапевтичних
+                  концентраціях Нокспрей Малюк не подразнює слизової оболонки
+                  носа, не спричинює гіперемію.
                 </div>
-                <ul class="about__list noksprey__list">
-                  <li class="about__list-item noksprey__list-item">
+                <ul class="noksprey__list">
+                  <li class="noksprey__list-item">
                     <img
-                      class="about__list-img"
+                      class="noksprey__list-img"
                       src="images/icons/white/icon_white_3.png"
                       alt=""
                     />
-                    <span class="about__list-text noksprey__list-text"
+                    <span class="noksprey__list-text"
                       >зменшує набряк слизової оболонки носа*</span
                     >
                   </li>
-                  <li class="about__list-item noksprey__list-item">
+                  <li class="noksprey__list-item">
                     <img
-                      class="about__list-img"
+                      class="noksprey__list-img"
                       src="images/icons/white/icon_white_1.png"
                       alt=""
                     />
-                    <span class="about__list-text noksprey__list-text"
+                    <span class="noksprey__list-text"
                       >відновлює носове дихання*</span
                     >
                   </li>
-                  <li class="about__list-item noksprey__list-item">
+                  <li class="noksprey__list-item">
                     <img
-                      class="about__list-img"
+                      class="noksprey__list-img"
                       src="images/icons/white/icon_white_2.png"
                       alt=""
                     />
-                    <span class="about__list-text noksprey__list-text"
+                    <span class="noksprey__list-text"
                       >зменшує виділення з носа*</span
                     >
                   </li>
                 </ul>
-                <div class="about__text noksprey__text">
-                  Активні компоненти ефірних олій, що входять до складу
-                  препарату Нокспрей, сприяють усуненню відчуття подразнення
-                  слизової оболонки носа та захищають її від надмірного
-                  висихання. Тривалість дії препарату Нокспрей становить 10-12
-                  годин.*
-                </div>
-                <div class="about__buttons noksprey__buttons">
+                <div class="noksprey-baby__bottons noksprey__buttons">
                   <a
-                    class="about__btn-link noksprey__btn-link btn-link-accent"
-                    href="https://apteki.ua/uk/product-266624/438721"
+                    class="noksprey__btn-link noksprey-baby__btn btn-link-accent"
+                    href="https://tabletki.ua/uk/%D0%9D%D0%BE%D0%BA%D1%81%D0%BF%D1%80%D0%B5%D0%B9-%D0%B0%D0%BA%D1%82%D0%B8%D0%B2/26828/"
                     target="_blank"
-                    >Знайти Нокспрей</a
+                    >Де придбати</a
                   >
-                  <a class="about__btn-link noksprey__btn-link" href="#"
-                    >Інструкція Нокспрей</a
+                  <a class="noksprey__btn-link noksprey-baby__btn" href="#"
+                    >Інструкція</a
                   >
                 </div>
-                <p class="about__note noksprey__note">
-                  *Інструкція для медичного застосування лікарського засобу
-                  Нокспрей.
+                <p class="noksprey__note">
+                  * Інструкція для медичного застосування лікарського засобу
+                  Нокспрей Актив.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Noksprey baby /end -->
+
+      <!-- Noksprey_children's -->
+      <section
+        class="noksprey_aqua noksprey-hildren"
+        style="
+          background-image: url(images/nosprey_kids/nosprey_kids_promo/nosprey_kids_promo_bg.jpg);
+        "
+      >
+        <div class="middle-container">
+          <div class="about__inner">
+            <div class="about__item noksprey-aqua__item noksprey__item">
+              <h2
+                class="noksprey-title animate__animated animate__bounce animate__backInLeft animate__delay-2s"
+              >
+                НОКСПРЕЙ ДИТЯЧИЙ
+              </h2>
+
+              <div class="noksprey__item-text">
+                <div
+                  class="noksprey__text-top animate__animated animate__bounce animate__backInLeft animate__delay-3s"
+                >
+                  Спрей для полегшення закладеності носа у дітей від 1 до 6
+                  років. Тривалість дії до 12 годин. Активні компоненти ефірних
+                  олій, що входять до складу препарату Нокспрей Дитячий,
+                  сприяють усуненню відчуття подразнення слизової оболонки носа
+                  та захищають її від надмірного висихання.
+                </div>
+                <ul class="noksprey__list">
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/white/icon_white_3.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >зменшує набряк слизової оболонки носа*</span
+                    >
+                  </li>
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/white/icon_white_1.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >відновлює носове дихання*</span
+                    >
+                  </li>
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/white/icon_white_2.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >зменшує виділення з носа*</span
+                    >
+                  </li>
+                </ul>
+                <div class="noksprey-baby__bottons noksprey__buttons">
+                  <a
+                    class="noksprey__btn-link noksprey-baby__btn btn-link-accent"
+                    href="https://tabletki.ua/uk/%D0%9D%D0%BE%D0%BA%D1%81%D0%BF%D1%80%D0%B5%D0%B9-%D0%B0%D0%BA%D1%82%D0%B8%D0%B2/26828/"
+                    target="_blank"
+                    >Де придбати</a
+                  >
+                  <a class="noksprey__btn-link noksprey-baby__btn" href="#"
+                    >Інструкція</a
+                  >
+                </div>
+                <p class="noksprey__note">
+                  * Інструкція для застосування розчину ізотонічного для
+                  промивання носу Нокспрей Аква
                 </p>
               </div>
             </div>
             <!-- Parallax img -->
             <div class="noksprey__item-img parallax__imgbox">
               <div
-                class="about__img parallax__img parallaxImg"
-                id="parallaxImg2"
-                style="
-                  background-image: url(images/noksprey_about/noksprey_img.png);
-                "
-              ></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About end-->
-
-      <!-- Noksprey active -->
-      <section
-        class="noksprey_active"
-        style="
-          background-image: url(images/noksprey_active/noksprey_active_bg.jpg);
-        "
-      >
-        <div class="middle-container">
-          <div class="noksprey_active__inner noksprey__inner">
-            <!-- Parallax img -->
-            <div class="about__item-img noksprey__item-img parallax__imgbox">
-              <div
                 class="about__img parallax__img"
-                id="parallax-img"
+                id="parallaxImg4"
                 style="
-                  background-image: url(images/noksprey_active/nokprey_active_img.png);
+                  background-image: url(images/nosprey_kids/nosprey_children/nosprey_children_img.png);
                 "
               ></div>
             </div>
-            <div class="noksprey_active__item noksprey__item">
-              <h2 class="noksprey_active__title noksprey-title">НОКСПРЕЙ</h2>
-              <h3 class="noksprey_active__subtitle noksprey-subtitle">
-                ПРИ НЕЖИТЮ ДОПОМАГАЄ – ШВИДКО<sup>2</sup> НІС
-                ПРОБИВАЄ<sup>4</sup>!
-              </h3>
-              <div class="noksprey_active__item-text noksprey__item-text">
-                <div class="noksprey_active__text noksprey__text">
-                  Спрей для полегшення закладеності носа у дітей від 6 років та
-                  дорослих. Діючою речовиною препарату Нокспрей є оксиметазолін,
-                  який:
-                </div>
-                <ul class="noksprey_active__list noksprey__list">
-                  <li class="noksprey_active__list-item noksprey__list-item">
-                    <img
-                      class="noksprey_active__list-img"
-                      src="images/icons/white/icon_white_3.png"
-                      alt=""
-                    />
-                    <span class="noksprey_active__list-text noksprey__list-item"
-                      >зменшує набряк слизової оболонки носа*</span
-                    >
-                  </li>
-                  <li class="noksprey_active__list-item noksprey__list-item">
-                    <img
-                      class="noksprey_active__list-img"
-                      src="images/icons/white/icon_white_1.png"
-                      alt=""
-                    />
-                    <span class="noksprey_active__list-text noksprey__list-text"
-                      >відновлює носове дихання*</span
-                    >
-                  </li>
-                  <li class="noksprey_active__list-item noksprey__list-item">
-                    <img
-                      class="noksprey_active__list-img"
-                      src="images/icons/white/icon_white_2.png"
-                      alt=""
-                    />
-                    <span class="noksprey_active__list-text noksprey__list-text"
-                      >зменшує виділення з носа*</span
-                    >
-                  </li>
-                </ul>
-                <div class="noksprey_active__text noksprey__text">
-                  Активні компоненти ефірних олій, що входять до складу
-                  препарату Нокспрей, сприяють усуненню відчуття подразнення
-                  слизової оболонки носа та захищають її від надмірного
-                  висихання. Тривалість дії препарату Нокспрей становить 10-12
-                  годин.*
-                </div>
-                <div class="noksprey_active__buttons noksprey__buttons">
-                  <a
-                    class="noksprey_active__btn-link noksprey__btn-link btn-link-accent"
-                    href="https://tabletki.ua/uk/%D0%9D%D0%BE%D0%BA%D1%81%D0%BF%D1%80%D0%B5%D0%B9-%D0%B0%D0%BA%D1%82%D0%B8%D0%B2/26828/"
-                    target="_blank"
-                    >Знайти Нокспрей</a
-                  >
-                  <a
-                    class="noksprey_active__btn-link noksprey__btn-link"
-                    href="#"
-                    >Інструкція Нокспрей</a
-                  >
-                </div>
-                <p class="noksprey_active__note noksprey__note">
-                  *Інструкція для медичного застосування лікарського засобу
-                  Нокспрей.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-      <!-- Noksprey active /end -->
-
-      <!-- Noksprey_aqua -->
-      <section
-        class="noksprey_aqua"
-        style="background-image: url(images/noksprey_aqua/nokprey_agua_bg.jpg)"
-      >
-        <div class="middle-container">
-          <div class="noksprey_aqua__inner noksprey__inner">
-            <div class="noksprey_aqua__item noksprey__item">
-              <h2 class="noksprey_aqua__title noksprey-title">НОКСПРЕЙ АКВА</h2>
-              <h3 class="noksprey_aqua__subtitle noksprey-subtitle">
-                ДЛЯ ЗВОЛОЖЕННЯ ТА ПРОМИВАННЯ НОСА
-              </h3>
-              <div class="noksprey_aqua__item-text">
-                <div class="noksprey_aqua__text noksprey__text">
-                  Нокспрей Аква – це медичний виріб у вигляді назального спрею,
-                  що містить в складі ізотонічний сольовий розчин для промивання
-                  носа. Використання Нокспрею Аква в комплексному лікуванні
-                  захворювань слизової оболонки носа і придаткових пазух
-                  (риносинусити) сприяє:
-                </div>
-                <ul class="noksprey_aqua__list noksprey__list">
-                  <li class="noksprey_aqua__list-item noksprey__list-item">
-                    <img
-                      class="noksprey_aqua__list-img"
-                      src="images/icons/black/icon_black_2.png"
-                      alt=""
-                    />
-                    <span class="noksprey_aqua__list-text noksprey__list-text"
-                      >зволоженню слизової оболонки носа*</span
-                    >
-                  </li>
-                  <li class="noksprey_aqua__list-item noksprey__list-item">
-                    <img
-                      class="noksprey_aqua__list-img"
-                      src="images/icons/black/icon_black_1.png"
-                      alt=""
-                    />
-                    <span class="noksprey_aqua__list-text noksprey__list-text"
-                      >відновленню носового дихання*</span
-                    >
-                  </li>
-                  <li class="noksprey_aqua__list-item noksprey__list-item">
-                    <img
-                      class="noksprey_aqua__list-img"
-                      src="images/icons/black/icon_black_5.png"
-                      alt=""
-                    />
-                    <span class="noksprey_aqua__list-text noksprey__list-text"
-                      >скороченню періоду реабілітації*</span
-                    >
-                  </li>
-                </ul>
-                <div class="noksprey_aqua__text noksprey__text">
-                  Активні компоненти ефірних олій, що входять до складу
-                  препарату Нокспрей, сприяють усуненню відчуття подразнення
-                  слизової оболонки носа та захищають її від надмірного
-                  висихання. Тривалість дії препарату Нокспрей становить 10-12
-                  годин.*
-                </div>
-                <div class="noksprey_aqua__buttons noksprey__buttons">
-                  <a
-                    class="noksprey_aqua__btn-link noksprey__btn-link btn-link-accent"
-                    href="https://apteki.ua/uk/product-340392/536537"
-                    target="_blank"
-                    >Знайти Нокспрей</a
-                  >
-                  <a class="noksprey_aqua__btn-link noksprey__btn-link" href="#"
-                    >Інструкція Нокспрей</a
-                  >
-                </div>
-                <p class="noksprey_aqua__note noksprey__note">
-                  *Інструкція для медичного застосування лікарського засобу
-                  Нокспрей.
-                </p>
-              </div>
-            </div>
-            <div class="noksprey_aqua__item-img noksprey__item-img">
-              <img
-                class="noksprey_aqua__img"
-                id="parallax-img"
-                src="images/noksprey_aqua/nokprey_agua_img.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Noksprey_aqua /end -->
-
-      <!-- Promotion -->
-      <section
-        class="promotion"
-        style="
-          background-image: url(images/noksprey_promotion/noksprey_promotion_bg.jpg);
-        "
-      >
-        <div class="middle-container">
-          <div class="promotion__inner noksprey__inner">
-            <div class="promotion__item-img noksprey__item-img">
-              <img
-                class="promotion__img"
-                src="images/noksprey_promotion/noksprey_promotion_img.png"
-                alt=""
-              />
-            </div>
-            <div class="promotion__item noksprey__item">
-              <h2 class="promotion__title noksprey-title">
-                АКЦІЙНИЙ НАБІР НОКСПРЕЙ
-              </h2>
-              <h3 class="promotion__subtitle noksprey-subtitle">
-                КУПУЮЧИ НАБІР, ОТРИМУЙ НОКСПРЕЙ АКВА У ПОДАРУНОК3!<sup>2</sup>!
-              </h3>
-              <div class="promotion__item-text noksprey__item-text">
-                <div class="promotion__text noksprey__text">
-                  Кажуть, щоб лікувати нежить1 потрібні два засоби: перший
-                  промиває, а другий пробиває4...<br />
-                  Саме тому було створено набір Нокспрей! Нокспрей - від нежитю,
-                  а Нокспрей Аква для промивання іде у подарунок3!
-                </div>
-                <ul class="promotion__list noksprey__list">
-                  <li class="promotion__list-item noksprey__list-item">
-                    <img
-                      class="promotion__list-img"
-                      src="images/icons/white/icon_white_3.png"
-                      alt=""
-                    />
-                    <span class="promotion__list-text noksprey__list-item"
-                      >Нокспрей Аква ніс промиває!</span
-                    >
-                  </li>
-                  <li class="promotion__list-item noksprey__list-item">
-                    <img
-                      class="promotion__list-img"
-                      src="images/icons/white/icon_white_1.png"
-                      alt=""
-                    />
-                    <span class="promotion__list-text noksprey__list-text"
-                      >Нокспрей ніс пробиває4!</span
-                    >
-                  </li>
-                </ul>
-                <div class="promotion__text noksprey__text">
-                  Купуючи набір, отримуй Нокспрей Аква у подарунок3!
-                </div>
-                <div class="promotion__buttons noksprey__buttons">
-                  <a
-                    class="promotion__btn-link noksprey__btn-link btn-link-accent"
-                    href="#"
-                    target="_blank"
-                    >Знайти Нокспрей</a
-                  >
-                  <a class="promotion__btn-link noksprey__btn-link" href="#"
-                    >Інструкція Нокспрей</a
-                  >
-                  <a class="promotion__btn-link noksprey__btn-link" href="#"
-                    >Інструкція Нокспрей Аква</a
-                  >
-                </div>
-                <p class="promotion__note noksprey__note">
-                  *Інструкція для медичного застосування лікарського засобу
-                  Нокспрей.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Promotion /end -->
-
-      <!-- Noksprey silver -->
-      <section class="noksprey_silver">
-        <div class="middle-container">
-          <div class="noksprey_silver__inner noksprey__inner">
-            <div class="noksprey_silver__item noksprey__item">
-              <h2 class="noksprey_silver__title noksprey-title">
-                НОКСПРЕЙ СІЛЬВЕР
-              </h2>
-              <h3 class="noksprey_silver__subtitle noksprey-subtitle">
-                НОКСПРЕЙ СІЛЬВЕР – СИЛА СРІБЛА, НІЖНІСТЬ ДЕКСПАНТЕНОЛУ!
-              </h3>
-              <div class="noksprey_silver__item-text">
-                <div class="noksprey_silver__text noksprey__text">
-                  Нокспрей Сільвер - це частина комплексного лікування5
-                  риносинуситу у вигляді медичного виробу для дітей віком від 1
-                  року* і дорослих. Назальний спрей Нокспрей Сільвер має
-                  антимікробну дію, а також сприяє регенерації слизової оболонки
-                  носа* завдяки іонам срібла та декспантенолу в складі.
-                </div>
-                <ul class="noksprey_silver__list noksprey__list">
-                  <li class="noksprey_aqua__list-item noksprey__list-item">
-                    <img
-                      class="noksprey_silver__list-img"
-                      src="images/icons/black/icon_black_4.png"
-                      alt=""
-                    />
-                    <span class="noksprey_silver__list-text noksprey__list-text"
-                      >Антибактеріальний, противірусний та протигрибковий
-                      ефекти*</span
-                    >
-                  </li>
-                  <li class="noksprey_silver__list-item noksprey__list-item">
-                    <img
-                      class="noksprey_silver__list-img"
-                      src="images/icons/black/icon_black_3.png"
-                      alt=""
-                    />
-                    <span class="noksprey_silver__list-text noksprey__list-text"
-                      >Декспантенол сприяє регенерації пошкодженої слизової
-                      оболонки носа</span
-                    >
-                  </li>
-                </ul>
-                <div class="noksprey_silver__buttons noksprey__buttons">
-                  <a
-                    class="noksprey_silver__btn-link noksprey__btn-link btn-link-accent"
-                    href="https://apteki.ua/uk/product-369709/692867"
-                    target="_blank"
-                    >Знайти Нокспрей Спрей</a
-                  >
-                  <a
-                    class="noksprey_silver__btn-link noksprey__btn-link"
-                    href="#"
-                    >Інструкція Нокспрей Сілвер</a
-                  >
-                </div>
-                <p class="noksprey_silver__note noksprey__note">
-                  *Інструкція для застосування медичного виробу Нокспрей
-                  Сільвер. 5. В якості антисептичного засобу
-                </p>
-              </div>
-            </div>
-            <div class="noksprey_silver__item-img noksprey__item-img">
-              <img
-                class="noksprey_silver__img"
-                src="images/noksprey_silver/noksprey_silver_img.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Noksprey silver /end -->
-
-      <section class="noksprey_bottom_note">
+      <!-- Noksprey_children's /end -->
+      <section class="noksprey_bottom_note kids_botton_note">
         <div class="container">
-          <div class="noksprey_bottom_note-text">
-            1Під фразами «лікування нежитю» та «лікувати нежить» мається на
-            увазі симптоматичне лікування гострих респіраторних захворювань
-            (ГРЗ), що супроводжуються закладеністю носа, алергічного риніту чи
-            вазомоторного риніту. 2Згідно з інструкцією для медичного
-            застосування дія препарату Нокспрей починається через 5-10 хвилин
-            після упорскування в порожнину носа. 3Мається на увазі, що вартість
-            «Нокспрей, назальний спрей 0,05% - 10 мл» дорівнює вартості
-            «Акційний комплект: Нокспрей, назальний спрей 0,05% - 10 мл +
-            Нокспрей Аква, розчин ізотонічний - 20 мл» під час продажу від
-            виробника дистриб'юторам. Акція дійсна на всій території України
-            (окрім АР Крим та тимчасово окупованих територій Донецької та
-            Луганської областей) у період з 01.01.2020 року і до закінчення
-            акційного товару на складі виробника. Детальні умови акції можна
-            дізнатися на сайті sperco.ua. Інформація не є публічною офертою.
-            4Під «пробиває» мається на увазі зменшення набряку слизової оболонки
-            носа та відновлення носового дихання. 5В якості антисептичного
-            засобу.
+          <div class="noksprey_bottom_note-text kids_bottom_note-text">
+            Реклама лікарських засобів. Перед застосуванням лікарського засобу
+            обов'язково проконсультуйтеся з лікарем і ознайомтеся з інструкцією
+            для медичного застосування лікарських засобів. Наявні протипоказання
+            та побічні реакції. Виробник: Лабораторіос Алкала Фарма, С.Л.,
+            Іспанія; Проспект Мадрид, 82, Алкала де Енарес, 28802 Мадрид,
+            Іспанія. РП МОЗ України № UA/12781/01/01 від 01.03.2013. РП МОЗ
+            України № UA/1703/01/02 від 06.11.2014.
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="noksprey_bottom_warning-item">
-          Реклама медичних виробів та лікарських засобів. Перед застосуванням
-          медичних виробів та лікарських засобів обов'язково проконсультуйтеся з
-          лікарем і ознайомтеся з інструкціями для застосування та інструкціями
-          для медичного застосування відповідно. НОКСПРЕЙ АКВА. Медичний виріб;
-          Ізотонічний сольовий розчин, назальний спрей, 9 мг/мл, 20 мл.
-          Декларація про відповідність №UA.TR.753.D.20112362/IS/DEC/001 від
-          31.05.2018 року. НОКСПРЕЙ СІЛЬВЕР. Медичний виріб. Спрей назальний.
-          Склад: срібла протеїнат 1,25 мг (mg) в 1 мл (ml) (в перерахунку на 100
-          ppm чистого срібла) та допоміжні речовини. Декларація про
-          відповідність №DOC.MD.002/ver.1 від 25.06.2020 року. НОКСПРЕЙ.
-          Лікарський засіб. РП МОЗ України: UA/1703/01/01 від 21.03.2019.
-          НОКСПРЕЙ АКТИВ. Лікарський засіб. РП МОЗ України: UA/12675/01/01 від
-          05.12.2018.
-
-          <div class="noksprey_address">
-            Виробник та заявник лікарських засобів НОКСПРЕЙ та НОКСПРЕЙ АКТИВ та
-            медичних виробів НОКСПРЕЙ АКВА та НОКСПРЕЙ СІЛЬВЕР: СУІП ТОВ «Сперко
-            Україна», 21027, Україна м. Вінниця, вул. 600-річчя, 25, тел/факс
-            (0432) 52 30 49.
-
-            <div class="noksprey_nox">NOX-20201210.</div>
-
-            <div class="noksprey__copy">
-              ©2020 СУІП ТОВ «Сперко Україна». Всі права захищені.
-            </div>
-
-            <div class="noksprey__create">Сreated by Level Media</div>
-          </div>
-        </div>
-      </div>
       <div id="footer_fix" class="footer__block-img">
         <img class="footer__img" src="images/footer/footer__img.svg" alt="" />
       </div>

@@ -83,13 +83,18 @@ sap {
   list-style: none;
 }
 
-.noksprey__item-text,
-.noksprey__list,
-.noksprey__text {
+.noksprey__list-item + .noksprey__list-item {
   margin-top: 30px;
 }
 
-.noksprey__item-text {
+.noksprey__text-top {
+  margin-top: 10px;
+}
+.noksprey__text-bottom {
+  margin-top: 30px;
+}
+
+.noksprey__text .noksprey__item-text {
   max-width: 734px;
   width: 100%;
 }
@@ -108,10 +113,11 @@ sap {
 
 .noksprey__btn-link {
   background-color: transparent;
-  padding: 20px 30px;
+  padding: 18px 20px;
   border: 2px solid $default;
   border-radius: 35px;
   font-size: 14px;
+  margin-right: 5px;
 }
 
 .btn-link-accent {
@@ -121,11 +127,6 @@ sap {
   border-radius: 35px;
   font-size: 14px;
   font-weight: 600;
-}
-
-.noksprey__btn-link {
-  margin-right: 5px;
-  padding: 18px 30px;
 }
 
 .noksprey__buttons {
@@ -143,11 +144,10 @@ sap {
 
 .noksprey__list-item {
   position: relative;
-  margin-top: 25px;
   max-width: 710px;
 }
 
-.about__list-img {
+.noksprey__list-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -156,14 +156,6 @@ sap {
 }
 
 // -------------------------------------------------------
-.footer,
-.noksprey_bottom_note,
-.noksprey_silver,
-.promotion,
-.noksprey_aqua,
-.noksprey_active {
-  display: none;
-}
 
 // -----------------------------------------------------------
 // Gradual appearance of elements on the face image

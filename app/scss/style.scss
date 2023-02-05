@@ -183,11 +183,11 @@
   right: -30px;
 }
 
-.noksprey_aqua {
+.noksprey-aqua {
   color: $default;
 }
 
-.noksprey_aqua__item {
+.noksprey-aqua__item {
   max-width: 670px;
 }
 .promotion__title {
@@ -195,7 +195,12 @@
 }
 
 .promotion__item {
-  margin-right: -152px;
+  max-width: 706px;
+}
+
+.noksprey_active__img {
+  width: 355px;
+  background-size: contain;
 }
 
 .noksprey_silver {
@@ -207,6 +212,10 @@
 }
 
 .noksprey_silver__inner {
+  max-width: 668px;
+}
+
+.noksprey_silver__item {
   color: $default;
 }
 
@@ -234,8 +243,12 @@
   margin-top: 20px;
 }
 
+.promotion__buttons {
+  margin-bottom: 70px;
+}
+
 .middle-container {
-  max-width: 1050px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -259,14 +272,22 @@
   margin-top: 30px;
 }
 
-.footer__img {
+.noksprey__list {
+  margin-top: 15px;
+}
+
+.noksprey-aqua__buttons {
+  margin-top: 25px;
+}
+
+.footer__block-img {
   padding: 10px 10px 5px;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  width: 99.2%;
-  background-color: white;
+  width: 100%;
+  background-color: $white;
 }
 
 // Kids
@@ -294,6 +315,14 @@
 
 .noksprey-hildren {
   background-position: 30% center;
+}
+
+.noksprey-baby__bottons {
+  margin-top: 20px;
+}
+
+.noksprey-baby__btn {
+  padding: 18px 50px;
 }
 
 .kids-promo {
