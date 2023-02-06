@@ -6,6 +6,8 @@
 
 @import "global";
 
+@import "animate";
+
 // ----------------------- Базові стилі ----------------
 :root {
   font-size: 0.75em; // 12px
@@ -48,13 +50,32 @@
     margin-right: 40px;
   }
 
-  &__menu-item {
-    transition: all 0.3s;
+  &__menu-link {
+    position: relative;
+    font-size: 16px;
+    color: #1b1f6d;
+    font-weight: 500;
+  }
+  // Decorative line under the menu
+  &__menu-link:hover:before {
+    transition: all 0.25s;
+    opacity: 1;
+    top: 20px;
   }
 
-  &__menu-item:hover {
-    border-bottom: 2px solid $default;
+  &__menu-link::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 0;
+    opacity: 0;
+    height: 1.5px;
+    width: 100%;
+    background-color: $black;
+    transform: translate(0px);
+    transition: all 0.25s;
   }
+  // Decorative line under the menu /end
 
   &__find-link {
     font-size: 0.875rem;
@@ -66,20 +87,20 @@
 }
 
 .promo {
-  height: 70vh;
+  height: 90vh;
   background-position: 50% center;
   background-size: cover;
 
   &__title {
     font-size: 4.1875rem;
     font-weight: 700;
-    padding-top: 116px;
+    padding-top: 30px;
     text-transform: uppercase;
   }
 
   &__item {
     width: 100%;
-    max-width: 900px;
+    max-width: 932px;
   }
 
   &__subtitle {
@@ -137,6 +158,22 @@
   }
 }
 
+.about {
+  background-position: 20% center;
+  background-size: cover;
+
+  &__item {
+    max-width: 780px;
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    // gap: 0 30px;
+  }
+}
+
 .kids__item-img {
   object-fit: cover;
 }
@@ -145,16 +182,11 @@
   right: -30px;
 }
 
-.about {
-  background-position: 20% center;
-  background-size: cover;
-}
-
-.noksprey_aqua {
+.noksprey-aqua {
   color: $default;
 }
 
-.noksprey_aqua__item {
+.noksprey-aqua__item {
   max-width: 670px;
 }
 .promotion__title {
@@ -162,7 +194,12 @@
 }
 
 .promotion__item {
-  margin-right: -152px;
+  max-width: 706px;
+}
+
+.noksprey_active__img {
+  width: 355px;
+  background-size: contain;
 }
 
 .noksprey_silver {
@@ -174,6 +211,10 @@
 }
 
 .noksprey_silver__inner {
+  max-width: 668px;
+}
+
+.noksprey_silver__item {
   color: $default;
 }
 
@@ -195,34 +236,18 @@
   color: $default;
 }
 
-.about__item {
-  max-width: 780px;
-}
-
-.about__inner {
-  position: relative;
-}
-
-.about__item-img {
-  position: absolute;
-  top: 138px;
-  right: -93px;
-}
-
-.about__img {
-  max-width: 386px;
-  width: 100%;
-  height: auto;
-}
-
 .noksprey_bottom_warning-item,
 .noksprey_address,
 .noksprey_nox {
   margin-top: 20px;
 }
 
+.promotion__buttons {
+  margin-bottom: 70px;
+}
+
 .middle-container {
-  max-width: 1050px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -246,14 +271,32 @@
   margin-top: 30px;
 }
 
-.footer__img {
+.noksprey__list {
+  margin-top: 15px;
+}
+
+.noksprey-aqua__buttons {
+  margin-top: 25px;
+}
+
+.dash__line {
+  list-style: none;
+}
+
+.dash__line li:before {
+  content: "—";
+  position: relative;
+  left: -5px;
+}
+
+.footer__block-img {
   padding: 10px 10px 5px;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  width: 99.2%;
-  background-color: white;
+  width: 100%;
+  background-color: $white;
 }
 
 // Kids
@@ -281,6 +324,14 @@
 
 .noksprey-hildren {
   background-position: 30% center;
+}
+
+.noksprey-baby__bottons {
+  margin-top: 20px;
+}
+
+.noksprey-baby__btn {
+  padding: 18px 50px;
 }
 
 .kids-promo {
@@ -367,5 +418,160 @@
 .buy__copy {
   padding-bottom: 170px;
 }
+
+.privacy {
+  background-image: url(../images/instructions/instructions_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &__item {
+    font-size: 14px;
+    padding-bottom: 181px;
+  }
+
+  &__title {
+    font-weight: 700;
+    padding-top: 25px;
+  }
+}
+
+.underline {
+  display: inline;
+  border-bottom: 1px solid $white;
+}
+
+.instructions__item {
+  --animate__fast: 500ms;
+}
+
+// Modal window
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup:target .popup__content {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  background-color: $white;
+  color: $default;
+  font-size: 14px;
+  max-width: 65%;
+  padding: 40px;
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+  transform: translate(0px, 100%);
+}
+
+.popup__header {
+  text-align: center;
+  font-size: 20px;
+}
+
+.popup__title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.popup__subtitle {
+  font-weight: 700;
+}
+
+.popup-uppercase {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.popup__item-title {
+  font-weight: 700;
+}
+
+.popup__item {
+  margin-top: 20px;
+}
+
+.popup__list {
+  list-style-type: disc;
+  margin-left: 10px;
+}
+
+.popup__list-item {
+  margin-left: 10px;
+}
+
+.popup__address-list {
+  list-style: none;
+}
+
+.popup__address-link {
+  color: #ff8562;
+}
+
+.popup__close {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.popup__close-img {
+  width: 25px;
+  height: 25px;
+}
+
+.animate__item-1 {
+  animation-delay: 0.3s;
+}
+
+.animate__item-2 {
+  animation-delay: 0.5s;
+}
+
+.animate__item-3 {
+  animation-delay: 0.7s;
+}
+
+.animate__item-4 {
+  animation-delay: 0.9s;
+}
+.animate__item-5 {
+  animation-delay: 1.2s;
+}
+
 // ------------------- Імпорт файлу стилів адаптиву -----------------
 @import "media";

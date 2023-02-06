@@ -13,6 +13,31 @@ body {
   font-size: 17px;
 }
 
+// Parallax
+.parallax__imgbox {
+  height: 485px;
+  position: relative;
+  // overflow: hidden;
+}
+
+.parallax__img-big,
+.parallax__img {
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 906px;
+  height: 243px;
+  transition: all 0.1s ease;
+  // margin-left: 10px;
+}
+
+.parallax__img {
+  width: 404px;
+  height: 100%;
+}
+// Parallax /end
+
 sap {
   text-transform: lowercase;
 }
@@ -42,10 +67,6 @@ sap {
   padding-left: 10px;
 }
 
-.noksprey__list-item + li {
-  padding-top: 10px;
-}
-
 .noksprey__inner {
   display: flex;
   justify-content: space-between;
@@ -62,13 +83,18 @@ sap {
   list-style: none;
 }
 
-.noksprey__item-text,
-.noksprey__list,
-.noksprey__text {
-  margin-top: 20px;
+.noksprey__list-item + .noksprey__list-item {
+  margin-top: 30px;
 }
 
-.noksprey__item-text {
+.noksprey__text-top {
+  margin-top: 10px;
+}
+.noksprey__text-bottom {
+  margin-top: 30px;
+}
+
+.noksprey__text .noksprey__item-text {
   max-width: 734px;
   width: 100%;
 }
@@ -81,14 +107,17 @@ sap {
 
 .noksprey__buttons {
   padding-top: 20px;
+  color: $default;
+  font-weight: 600;
 }
 
 .noksprey__btn-link {
   background-color: transparent;
-  padding: 20px 30px;
+  padding: 18px 20px;
   border: 2px solid $default;
   border-radius: 35px;
   font-size: 14px;
+  margin-right: 5px;
 }
 
 .btn-link-accent {
@@ -97,11 +126,7 @@ sap {
   color: $white;
   border-radius: 35px;
   font-size: 14px;
-}
-
-.noksprey__btn-link {
-  margin-right: 5px;
-  padding: 18px 50px;
+  font-weight: 600;
 }
 
 .noksprey__buttons {
@@ -113,19 +138,57 @@ sap {
 }
 
 .noksprey__list-text {
-  margin-left: 10px;
-}
-
-.noksprey__list-item {
-  padding-left: 10px;
+  padding-left: 60px;
+  display: block;
 }
 
 .noksprey__list-item {
   position: relative;
+  max-width: 710px;
 }
 
-.noksprey__list-text {
+.noksprey__list-img {
   position: absolute;
-  left: 52px;
-  top: 6px;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+
+// -------------------------------------------------------
+
+// -----------------------------------------------------------
+// Gradual appearance of elements on the face image
+.promo__block-image-wrapper-1 {
+  opacity: 0;
+  animation: ani 1.5s forwards;
+}
+
+.promo__block-image-wrapper-2 {
+  opacity: 0;
+  animation: ani 3.5s forwards;
+}
+
+.promo__block-image-wrapper-3 {
+  opacity: 0;
+  animation: ani 5.5s forwards;
+}
+
+.promo__block-image-wrapper-4 {
+  opacity: 0;
+  animation: ani 6.5s forwards;
+}
+
+.promo__block-image-wrapper-5 {
+  opacity: 0;
+  animation: ani 7.5s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
