@@ -11,7 +11,6 @@
 // ----------------------- Базові стилі ----------------
 :root {
   font-size: 0.75em; // 12px
-  --animate-delay: 0.5s;
 }
 
 @media (min-width: 800px) {
@@ -280,6 +279,16 @@
   margin-top: 25px;
 }
 
+.dash__line {
+  list-style: none;
+}
+
+.dash__line li:before {
+  content: "—";
+  position: relative;
+  left: -5px;
+}
+
 .footer__block-img {
   padding: 10px 10px 5px;
   position: fixed;
@@ -409,5 +418,141 @@
 .buy__copy {
   padding-bottom: 170px;
 }
+
+.privacy {
+  background-image: url(../images/instructions/instructions_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &__item {
+    font-size: 14px;
+    padding-bottom: 181px;
+  }
+
+  &__title {
+    font-weight: 700;
+    padding-top: 25px;
+  }
+}
+
+.underline {
+  display: inline;
+  border-bottom: 1px solid $white;
+}
+
+.instructions__item {
+  --animate__fast: 500ms;
+}
+
+// Modal window
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup:target .popup__content {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  background-color: $white;
+  color: $default;
+  font-size: 14px;
+  max-width: 65%;
+  padding: 40px;
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+  transform: translate(0px, 100%);
+}
+
+.popup__header {
+  text-align: center;
+  font-size: 20px;
+}
+
+.popup__title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.popup__subtitle {
+  font-weight: 700;
+}
+
+.popup-uppercase {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.popup__item-title {
+  font-weight: 700;
+}
+
+.popup__item {
+  margin-top: 20px;
+}
+
+.popup__list {
+  list-style-type: disc;
+  margin-left: 10px;
+}
+
+.popup__list-item {
+  margin-left: 10px;
+}
+
+.popup__address-list {
+  list-style: none;
+}
+
+.popup__address-link {
+  color: #ff8562;
+}
+
+.popup__close {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.popup__close-img {
+  width: 25px;
+  height: 25px;
+}
+
 // ------------------- Імпорт файлу стилів адаптиву -----------------
 @import "media";
