@@ -554,5 +554,24 @@
   height: 25px;
 }
 
+.animate__item-1 {
+  animation-delay: 0.3s;
+}
+
+.animate__item-2 {
+  animation-delay: 0.5s;
+}
+
+.animate__item-3 {
+  animation-delay: 0.7s;
+}
+
+.animate__item-4 {
+  animation-delay: 0.9s;
+}
+.animate__item-5 {
+  animation-delay: 1.2s;
+}
+
 // ------------------- Імпорт файлу стилів адаптиву -----------------
 @import "media";
