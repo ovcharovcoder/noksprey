@@ -6,6 +6,15 @@
   padding: 0 0.9375em; // 0 15px
 }
 
+.promo,
+.about,
+.noksprey_active,
+.noksprey-aqua,
+.promotion,
+.noksprey_silver {
+  overflow: hidden;
+}
+
 body {
   font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.45;
@@ -17,6 +26,8 @@ body {
 .parallax__imgbox {
   height: 485px;
   position: relative;
+  display: block;
+  width: 100%;
   // overflow: hidden;
 }
 
@@ -34,6 +45,11 @@ body {
 
 .parallax__img {
   width: 404px;
+  height: 100%;
+}
+
+.nosprey-baby.parallax__img {
+  width: 359px;
   height: 100%;
 }
 // Parallax /end
@@ -81,6 +97,7 @@ sap {
 
 .noksprey__list {
   list-style: none;
+  margin-bottom: 30px;
 }
 
 .noksprey__list-item + .noksprey__list-item {
@@ -89,9 +106,6 @@ sap {
 
 .noksprey__text-top {
   margin-top: 10px;
-}
-.noksprey__text-bottom {
-  margin-top: 30px;
 }
 
 .noksprey__text .noksprey__item-text {
@@ -158,37 +172,3 @@ sap {
 // -------------------------------------------------------
 
 // -----------------------------------------------------------
-// Gradual appearance of elements on the face image
-.promo__block-image-wrapper-1 {
-  opacity: 0;
-  animation: ani 1.5s forwards;
-}
-
-.promo__block-image-wrapper-2 {
-  opacity: 0;
-  animation: ani 3.5s forwards;
-}
-
-.promo__block-image-wrapper-3 {
-  opacity: 0;
-  animation: ani 5.5s forwards;
-}
-
-.promo__block-image-wrapper-4 {
-  opacity: 0;
-  animation: ani 6.5s forwards;
-}
-
-.promo__block-image-wrapper-5 {
-  opacity: 0;
-  animation: ani 7.5s forwards;
-}
-
-@keyframes ani {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}

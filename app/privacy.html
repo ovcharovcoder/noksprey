@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -41,10 +41,33 @@
           <div class="header__find">
             <a class="header__find-link" href="">Знайти Нокспрей</a>
           </div>
+          <!-- Mobile navigation button -->
+          <button class="mobile-nav-button" type="button">
+            <span class="mobile-nav-button__icon"></span>
+          </button>
+          <!-- Mobile navigation button //end -->
         </div>
       </div>
     </header>
     <!-- Header /end-->
+
+    <!--Mobile navigation menu  -->
+    <div class="mobile-nav">
+      <nav class="mobile-nav__menu">
+        <ul class="mobile-nav__list">
+          <li>
+            <a href="#">Про Нокспрей</a>
+          </li>
+          <li>
+            <a href="#">Інструкції</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__btn">
+        <a class="header__find-link" href="buy.html">Знайти Нокспрей</a>
+      </div>
+    </div>
+    <!--Mobile navigation menu  //end -->
 
     <!-- Privacy -->
     <main>
@@ -55,7 +78,7 @@
               <div class="privacy__item">
                 <h3 class="privacy__title">Положення про конфіденційність</h3>
                 <p class="privacy__text">
-                  <b style="text-bold">
+                  <b class="text-bold">
                     СУІП ТОВ «Сперко Україна» (надалі – Компанія)</b
                   >
                   у відповідності до чинного законодавства про захист
@@ -174,7 +197,7 @@
                 </p>
 
                 <h3 class="privacy__title">Файли cookie</h3>
-                <p class="privacy__text">
+                <div class="privacy__text">
                   Cookie файли (сookies) – це невеликі фрагменти даних, які
                   завантажуються на ваш комп'ютер чи інший пристрій з сервера,
                   коли ви відвідуєте веб-сайти належні Компанії. Cookies зокрема
@@ -192,17 +215,21 @@
                     href="http://www.aboutcookies.org/"
                     >http://www.aboutcookies.org/.</a
                   >
-                  <br>Cookie файли використовуються з метою:
+                  <br />Cookie файли використовуються з метою:
                   <ul class="dash__line">
-                    <li>формування
-                      статистики та визначення демографічних даних та інтересів
-                      користувачів сайту, виключаючи можливість ідентифікації осіб
-                      користувачів (файли cookies, що збираються на веб-сайті, є
-                      знеособленими, тому вони не вважаться персональними даними
-                      згідно чинного законодавства України)</li>
-                    <li>виявлення проблем із
-                      нашим сервером та вдосконалення роботи веб-сайтів Компанії</li>
-                  </ul>  
+                    <li>
+                      формування статистики та визначення демографічних даних та
+                      інтересів користувачів сайту, виключаючи можливість
+                      ідентифікації осіб користувачів (файли cookies, що
+                      збираються на веб-сайті, є знеособленими, тому вони не
+                      вважаться персональними даними згідно чинного
+                      законодавства України)
+                    </li>
+                    <li>
+                      виявлення проблем із нашим сервером та вдосконалення
+                      роботи веб-сайтів Компанії
+                    </li>
+                  </ul>
                   Для цього Компанія користується сервіси веб-аналітики, які
                   підраховують кількість відвідувачів та показують інформацію
                   про загальну поведінку користувачів – таку як ідентифікація
@@ -211,7 +238,7 @@
                   сторінок, які переглядає користувач. Інформація про
                   користувачів, отримана за допомогою файлів cookie, не
                   продається і не поширюється у відкритому доступі.
-                </p>
+                </div>
 
                 <h3 class="privacy__title">Контакти</h3>
                 <p class="privacy__text">

@@ -1,27 +1,35 @@
+<!-- 
+Вебсайт розроблено за графічним макетом "Noksprey".
+Автор розробки вебсайту: Андрій Овчаров;
+E-mail автора: datoshcode@gmail.com;
+Дата розробки вебсайту: 01.02.2023 по 09.02.2023. 
+-->
+
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/icons/shortcut.ico" />
-    <title>Нокспрей: Інструкції</title>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Нокспрей: Головна сторінка</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
+
   <body>
     <!-- Header -->
-    <header class="header" id="header">
+    <header class="header">
       <div class="header__inner">
         <div class="header__item">
           <a class="header__logo-link" href="">
@@ -32,1278 +40,801 @@
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-item">
-                <a class="header__menu-link" href="">Про Нокспрей</a>
+                <a class="header__menu-link" href="#">Про Нокспрей</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="">Інструкції</a>
+                <a class="header__menu-link" href="instruction.html"
+                  >Інструкції</a
+                >
               </li>
             </ul>
           </nav>
           <div class="header__find">
-            <a class="header__find-link" href="">Знайти Нокспрей</a>
+            <a class="header__find-link" href="buy.html">Знайти Нокспрей</a>
           </div>
+          <!-- Mobile navigation button -->
+          <button class="mobile-nav-button" type="button">
+            <span class="mobile-nav-button__icon"></span>
+          </button>
+          <!-- Mobile navigation button //end -->
         </div>
       </div>
     </header>
     <!-- Header /end-->
 
+    <!--Mobile navigation menu  -->
+    <div class="mobile-nav">
+      <nav class="mobile-nav__menu">
+        <ul class="mobile-nav__list">
+          <li>
+            <a href="#">Про Нокспрей</a>
+          </li>
+          <li>
+            <a href="#">Інструкції</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__btn">
+        <a class="header__find-link" href="buy.html">Знайти Нокспрей</a>
+      </div>
+    </div>
+    <!--Mobile navigation menu  //end -->
+
     <main>
-      <!-- Instructions promo -->
-      <div
-        class="instructions-promo"
-        style="background-image: url(images/instructions/instructions_bg.jpg)"
+      <!-- Promo -->
+      <section
+        class="promo"
+        style="background-image: url(images/promo/promo_bg.jpg)"
       >
         <div class="container">
-          <div class="instructions__inner">
-            <!-- Нокспрей Аква -->
-            <div
-              class="instructions__item wow animate__animated animate__fadeInLeft animate__item-1"
-            >
-              <a class="instructions__link" href="#">
+          <div class="promo__inner">
+            <div class="promo__content">
+              <h1
+                class="promo__title wow animate__fadeInDown"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                Нокспрей
+              </h1>
+              <h2
+                class="promo__subtitle wow animate__fadeInDown"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                Лінійка засобів для лікування<sup>1</sup> нежитю
+                <span>від SPERCO</span>
+              </h2>
+              <!-- Parallax img -->
+              <div
+                class="promo__item parallax__imgbox wow animate__fadeInDown"
+                data-wow-duration="1s"
+                data-wow-delay="0.8s"
+              >
                 <img
-                  class="instructions__img"
-                  src="images/noksprey_aqua/nokprey_agua_img.png"
-                  alt="Нокспрей Аква"
+                  class="promo__item-img parallax__img-big"
+                  id="parallaxImg1"
+                  src="images/promo/promo_img.png"
+                  alt="medicine boxes"
                 />
-                <div class="instructions__text">Нокспрей Аква</div>
-              </a>
-              <div class="noksprey__buttons instructions__button">
-                <a
-                  class="instructions__btn-link noksprey__btn-link btn-link-accent instructions-btn"
-                  href="#popup1"
-                  >Інструкція</a
-                >
               </div>
             </div>
+            <!-- Parallax img /end -->
 
-            <!-- Нокспрей -->
-            <div
-              class="instructions__item wow animate__animated animate__fadeInLeft animate__item-2"
-            >
-              <a class="instructions__link" href="#">
+            <!-- Face img -->
+            <div class="promo__block-image">
+              <div
+                class="promo__block-item wow animate__fadeIn"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
                 <img
-                  class="instructions__img"
-                  src="images/noksprey_about/noksprey_img.png"
-                  alt="Нокспрей Аква"
+                  class="promo__block-img"
+                  src="images/promo/promo_face.png"
+                  alt="face"
                 />
-                <div class="instructions__text">Нокспрей</div>
-              </a>
-              <div class="noksprey__buttons instructions__button">
-                <a
-                  class="instructions__btn-link noksprey__btn-link btn-link-accent instructions-btn"
-                  href="#popup2"
-                  >Інструкція</a
+              </div>
+              <div class="promo__block-item__wrapper">
+                <div
+                  class="promo__block-item wow animate__fadeIn"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.3s"
                 >
+                  <span class="promo__block-item_1"></span>
+                </div>
+
+                <div
+                  class="promo__block-item_2 wow animate__fadeIn"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.8s"
+                >
+                  <img
+                    class="promo__block-item-img"
+                    src="images/promo_decor_circle.png"
+                    alt="big red circle"
+                  />
+                </div>
+                <div
+                  class="promo__block-item_3 wow animate__fadeIn"
+                  data-wow-duration="1s"
+                  data-wow-delay="1s"
+                >
+                  <img
+                    class="promo__block-item-img"
+                    src="images/promo_deror_simple_semicircle.png"
+                    alt="red semicircle"
+                  />
+                </div>
+                <div
+                  class="promo__block-item_4 wow animate__fadeIn"
+                  data-wow-duration="1s"
+                  data-wow-delay="1.2s"
+                >
+                  <img
+                    class="promo__block-item-img"
+                    src="images/promo_decore_big_semicirle.png"
+                    alt="red semicircle"
+                  />
+                </div>
               </div>
             </div>
+            <!-- Face img /end -->
+          </div>
+        </div>
+      </section>
+      <!-- Promo /end -->
 
-            <!-- Нокспрей Актив -->
-            <div
-              class="instructions__item wow animate__animated animate__fadeInLeft animate__item-3"
-            >
-              <a class="instructions__link" href="#">
-                <img
-                  class="instructions__img"
-                  src="images/noksprey_active/nokprey_active_img.png"
-                  alt="Нокспрей Аква"
-                />
-                <div class="instructions__text">Нокспрей Актив</div>
-              </a>
-              <div class="noksprey__buttons instructions__button">
-                <a
-                  class="instructions__btn-link noksprey__btn-link btn-link-accent instructions-btn"
-                  href="#popup3"
-                  >Інструкція</a
+      <!-- About -->
+      <section
+        class="about"
+        id="aside-item-1"
+        style="background-image: url(images/noksprey_about/noksprey_bg.jpg)"
+      >
+        <div class="middle-container">
+          <div class="about__inner">
+            <div class="about__item noksprey__item">
+              <div
+                class="noksprey__header wow animate__fadeInLeft"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <h2 class="noksprey-title">НОКСПРЕЙ</h2>
+                <h3 class="noksprey-subtitle">
+                  ПРИ НЕЖИТЮ ДОПОМАГАЄ – ШВИДКО<sup>2</sup> НІС
+                  ПРОБИВАЄ<sup>4</sup>!
+                </h3>
+              </div>
+              <div class="noksprey__item-text">
+                <div
+                  class="noksprey__text-top wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
                 >
+                  Спрей для полегшення закладеності носа у дітей від 6 років та
+                  дорослих. Діючою речовиною препарату Нокспрей є оксиметазолін,
+                  який:
+                </div>
+                <ul
+                  class="noksprey__list wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/white/icon_white_3.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >зменшує набряк слизової оболонки носа*</span
+                    >
+                  </li>
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/white/icon_white_1.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >відновлює носове дихання*</span
+                    >
+                  </li>
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/white/icon_white_2.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >зменшує виділення з носа*</span
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="noksprey__text-bottom wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  Активні компоненти ефірних олій, що входять до складу
+                  препарату Нокспрей, сприяють усуненню відчуття подразнення
+                  слизової оболонки носа та захищають її від надмірного
+                  висихання.<br />
+                  Тривалість дії препарату Нокспрей становить 10-12 годин.*
+                </div>
+                <div
+                  class="noksprey__buttons wow animate__fadeIn"
+                  data-wow-duration="1s"
+                  data-wow-delay="1.2s"
+                >
+                  <a
+                    class="noksprey__btn-link btn-link-accent"
+                    href="https://apteki.ua/uk/product-266624/438721"
+                    target="_blank"
+                    >Знайти Нокспрей</a
+                  >
+                  <a class="noksprey__btn-link" href="#">Інструкція Нокспрей</a>
+                </div>
+                <p
+                  class="noksprey__note wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  *Інструкція для медичного застосування лікарського засобу
+                  Нокспрей.
+                </p>
               </div>
             </div>
-
-            <!-- Нокспрей Сілвер -->
+            <!-- Parallax img -->
             <div
-              class="instructions__item wow animate__animated animate__fadeInLeft animate__item-4"
+              class="noksprey__item-img parallax__imgbox wow animate__fadeInDown"
+              data-wow-duration="1s"
+              data-wow-delay="0.3s"
             >
-              <a class="instructions__link" href="#">
-                <img
-                  class="instructions__img"
-                  src="images/noksprey_silver/noksprey_silver_img.png"
-                  alt="Нокспрей Аква"
-                />
-                <div class="instructions__text">Нокспрей Сілвер</div>
-              </a>
-              <div class="noksprey__buttons instructions__button">
-                <a
-                  class="instructions__btn-link noksprey__btn-link btn-link-accent instructions-btn"
-                  href="#popup4"
-                  >Інструкція</a
+              <div
+                class="about__img parallax__img"
+                id="parallaxImg2"
+                style="
+                  background-image: url(images/noksprey_about/noksprey_img.png);
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About end-->
+
+      <!-- Noksprey active -->
+      <section
+        class="noksprey-active"
+        id="aside-item-2"
+        style="
+          background-image: url(images/noksprey_active/noksprey_active_bg.jpg);
+        "
+      >
+        <div class="middle-container">
+          <div class="noksprey__inner">
+            <!-- Parallax img -->
+            <div
+              class="noksprey__item-img parallax__imgbox wow animate__fadeInDown"
+              data-wow-duration="1s"
+              data-wow-delay="0.3s"
+            >
+              <div
+                class="noksprey-active__img parallax__img"
+                id="parallaxImg3"
+                style="
+                  background-image: url(images/noksprey_active/nokprey_active_img.png);
+                "
+              ></div>
+            </div>
+            <div class="noksprey__item">
+              <div
+                class="noksprey__header wow animate__fadeInLeft"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <h2 class="noksprey-title">НОКСПРЕЙ АКТИВ</h2>
+                <h3 class="noksprey-subtitle">
+                  ВІД НЕЖИТЮ СПРЕЙ ДЛЯ АКТИВНИХ ЛЮДЕЙ!
+                </h3>
+              </div>
+              <div class="noksprey__item-text">
+                <div
+                  class="noksprey__text-top wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
                 >
+                  Спрей для полегшення закладеності носа у дітей від 6 років та
+                  дорослих. Нокспрей Актив має зручний флакон з помповим
+                  розпилювачем. Діючою речовиною препарату Нокспрей Актив є
+                  оксиметазолін, який:
+                </div>
+                <ul
+                  class="noksprey__list wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/white/icon_white_3.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >зменшує набряк слизової оболонки носа*</span
+                    >
+                  </li>
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/white/icon_white_1.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >відновлює носове дихання*</span
+                    >
+                  </li>
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/white/icon_white_2.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >зменшує виділення з носа*</span
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="noksprey__text-bottom wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  Активні компоненти ефірних олій, що входять до складу
+                  препарату Нокспрей, сприяють усуненню відчуття подразнення
+                  слизової оболонки носа та захищають її від надмірного
+                  висихання.<br />
+                  Тривалість дії препарату Нокспрей становить 10-12 годин.*
+                </div>
+                <div
+                  class="noksprey__buttons wow animate__animated animate__fadeIn"
+                  data-wow-duration="1s"
+                  data-wow-delay="1.2s"
+                >
+                  <a
+                    class="noksprey__btn-link btn-link-accent"
+                    href="https://tabletki.ua/uk/%D0%9D%D0%BE%D0%BA%D1%81%D0%BF%D1%80%D0%B5%D0%B9-%D0%B0%D0%BA%D1%82%D0%B8%D0%B2/26828/"
+                    target="_blank"
+                    >Знайти Нокспрей Актив</a
+                  >
+                  <a class="noksprey__btn-link" href="#"
+                    >Інструкція Нокспрей Актив</a
+                  >
+                </div>
+                <p
+                  class="noksprey__note wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  *Інструкція для медичного застосування лікарського засобу
+                  Нокспрей.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- Noksprey active /end -->
 
+      <!-- Noksprey_aqua -->
       <section
-        class="noksprey_bottom_note kids_botton_note instructions_botton_note"
+        class="noksprey-aqua"
+        id="aside-item-3"
+        style="background-image: url(images/noksprey_aqua/nokprey_agua_bg.jpg)"
       >
+        <div class="middle-container">
+          <div class="about__inner">
+            <div class="about__item noksprey-aqua__item noksprey__item">
+              <div
+                class="noksprey__header wow animate__fadeInLeft"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <h2 class="noksprey-title">НОКСПРЕЙ АКВА</h2>
+                <h3 class="noksprey-subtitle">
+                  ДЛЯ ЗВОЛОЖЕННЯ ТА ПРОМИВАННЯ НОСА
+                </h3>
+              </div>
+
+              <div class="noksprey__item-text">
+                <div
+                  class="noksprey__text-top wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  Нокспрей Аква – це медичний виріб у вигляді назального спрею,
+                  що містить в складі ізотонічний сольовий розчин для промивання
+                  носа. Використання Нокспрею Аква в комплексному лікуванні
+                  захворювань слизової оболонки носа і придаткових пазух
+                  (риносинусити) сприяє:
+                </div>
+                <ul
+                  class="noksprey__list wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/black/icon_black_2.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >зволоженню слизової оболонки носа*</span
+                    >
+                  </li>
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/black/icon_black_1.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >відновлює носове дихання*</span
+                    >
+                  </li>
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/black/icon_black_5.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >скороченню періоду реабілітації*</span
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="noksprey__buttons wow animate__animated animate__fadeIn"
+                  data-wow-duration="1s"
+                  data-wow-delay="1.2s"
+                >
+                  <a
+                    class="noksprey__btn-link btn-link-accent"
+                    href="https://apteki.ua/uk/product-266624/438721"
+                    target="_blank"
+                    >Знайти Нокспрей Аква</a
+                  >
+                  <a class="noksprey__btn-link" href="#"
+                    >Інструкція Нокспрей Аква</a
+                  >
+                </div>
+                <p
+                  class="noksprey__note wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  *Інструкція для медичного застосування лікарського засобу
+                  Нокспрей.
+                </p>
+              </div>
+            </div>
+            <!-- Parallax img -->
+            <div
+              class="noksprey__item-img parallax__imgbox wow animate__fadeInDown"
+              data-wow-duration="1s"
+              data-wow-delay="0.3s"
+            >
+              <div
+                class="about__img parallax__img"
+                id="parallaxImg4"
+                style="
+                  background-image: url(images/noksprey_aqua/nokprey_agua_img.png);
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Noksprey aqua /end -->
+
+      <!-- Promotion -->
+      <section
+        class="promotion"
+        id="aside-item-4"
+        style="
+          background-image: url(images/noksprey_promotion/noksprey_promotion_bg.jpg);
+        "
+      >
+        <div class="middle-container">
+          <div class="noksprey__inner">
+            <!-- Parallax img -->
+            <div
+              class="noksprey__item-img parallax__imgbox wow animate__fadeInDown"
+              data-wow-duration="1s"
+              data-wow-delay="0.3s"
+            >
+              <div
+                class="noksprey_active__img parallax__img"
+                id="parallaxImg5"
+                style="
+                  background-image: url(images/noksprey_promotion/noksprey_promotion_img.png);
+                "
+              ></div>
+            </div>
+            <div class="promotion__item noksprey__item">
+              <div
+                class="noksprey__header wow animate__fadeInLeft"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <h2 class="promotion__title noksprey-title">
+                  АКЦІЙНИЙ НАБІР НОКСПРЕЙ
+                </h2>
+                <h3 class="noksprey-subtitle">
+                  КУПУЮЧИ НАБІР, ОТРИМУЙ НОКСПРЕЙ АКВА У ПОДАРУНОК<sup>3</sup>!
+                </h3>
+              </div>
+              <div class="noksprey__item-text">
+                <div
+                  class="noksprey__text-top wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  Кажуть, щоб лікувати нежить<sup>1</sup> потрібні два засоби:
+                  перший промиває, а другий пробиває<sup>4</sup>...<br />
+                  Саме тому було створено набір Нокспрей! Нокспрей - від нежитю,
+                  а Нокспрей Аква для промивання іде у подарунок<sup>3</sup>!
+                </div>
+                <ul
+                  class="noksprey__list wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/white/icon_white_1.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >зменшує набряк слизової оболонки носа*</span
+                    >
+                  </li>
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/white/icon_white_3.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >відновлює носове дихання*</span
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="noksprey__text-bottom wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  Купуючи набір, отримуй Нокспрей Аква у подарунок <sup>3</sup>!
+                </div>
+                <div
+                  class="promotion__buttons noksprey__buttons wow animate__animated animate__fadeIn"
+                >
+                  <a
+                    class="noksprey__btn-link btn-link-accent"
+                    href="https://tabletki.ua/uk/%D0%9D%D0%BE%D0%BA%D1%81%D0%BF%D1%80%D0%B5%D0%B9-%D0%B0%D0%BA%D1%82%D0%B8%D0%B2/26828/"
+                    target="_blank"
+                    >Знайти Набір Нокспрей</a
+                  >
+                  <a class="noksprey__btn-link" href="#">Інструкція Нокспрей</a>
+                  <a class="noksprey__btn-link" href="#"
+                    >Інструкція Нокспрей Аква</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Promotion /end -->
+
+      <!-- Noksprey silver -->
+      <section class="noksprey_silver" id="aside-item-5">
+        <div class="middle-container">
+          <div class="noksprey_silver__inner noksprey__inner">
+            <div class="noksprey_silver__item noksprey__item">
+              <div
+                class="noksprey__header wow animate__fadeInLeft"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <h2 class="noksprey-title">НОКСПРЕЙ СІЛЬВЕР</h2>
+                <h3 class="noksprey-subtitle">
+                  НОКСПРЕЙ СІЛЬВЕР – СИЛА СРІБЛА, НІЖНІСТЬ ДЕКСПАНТЕНОЛУ!
+                </h3>
+              </div>
+
+              <div class="noksprey__item-text">
+                <div
+                  class="noksprey__text-top wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  Нокспрей Сільвер - це частина комплексного лікування5
+                  риносинуситу у вигляді медичного виробу для дітей віком від 1
+                  року* і дорослих. Назальний спрей Нокспрей Сільвер має
+                  антимікробну дію, а також сприяє регенерації слизової оболонки
+                  носа* завдяки іонам срібла та декспантенолу в складі.
+                </div>
+                <ul
+                  class="noksprey__list wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/black/icon_black_4.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >Антибактеріальний, противірусний та протигрибковий
+                      ефекти*</span
+                    >
+                  </li>
+                  <li class="noksprey__list-item">
+                    <img
+                      class="noksprey__list-img"
+                      src="images/icons/black/icon_black_3.png"
+                      alt=""
+                    />
+                    <span class="noksprey__list-text"
+                      >Декспантенол сприяє регенерації пошкодженої слизової
+                      оболонки носа</span
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="noksprey__buttons wow animate__animated animate__fadeIn"
+                  data-wow-duration="1s"
+                  data-wow-delay="1.2s"
+                >
+                  <a
+                    class="noksprey__btn-link btn-link-accent"
+                    href="https://apteki.ua/uk/product-369709/692867"
+                    target="_blank"
+                    >Знайти Нокспрей Сільвер</a
+                  >
+                  <a class="noksprey__btn-link" href="#"
+                    >Інструкція Нокспрей Сільвер</a
+                  >
+                </div>
+                <p
+                  class="noksprey__note wow animate__fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  *Інструкція для застосування медичного виробу Нокспрей
+                  Сільвер.<br />
+                  5. В якості антисептичного засобу
+                </p>
+              </div>
+            </div>
+            <!-- Parallax img -->
+            <div
+              class="noksprey__item-img parallax__imgbox wow animate__fadeInDown"
+              data-wow-duration="1s"
+              data-wow-delay="0.3s"
+            >
+              <div
+                class="about__img parallax__img parallaxImg"
+                id="parallaxImg6"
+                style="
+                  background-image: url(images/noksprey_silver/noksprey_silver_img.png);
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Noksprey silver /end -->
+
+      <section class="noksprey_bottom_note">
         <div class="container">
-          <div
-            class="noksprey_bottom_note-text kids_bottom_note-text instructions_bottom_note-text"
-          >
-            Реклама медичного виробу та лікарських засобів. Перед застосуванням
-            медичного виробу та лікарських засобів обов'язково проконсультуйтеся
-            з лікарем і ознайомтеся з інструкцією для застосування та
-            інструкціями для медичного застосування відповідно. НОКСПРЕЙ АКВА.
-            Медичний виріб; Ізотонічний сольовий розчин, назальний спрей, 9
-            мг/мл, 20 мл. Декларація про відповідність
-            №UA.TR.753.D.20112362/IS/DEC/001 від 31.05.2018 року. Виробник
-            медичного виробу Нокспрей Аква: СУІП ТОВ «Сперко Україна», 21027,
-            Україна м. Вінниця, вул. 600-річчя, 25. НОКСПРЕЙ. Лікарський засіб.
-            Виробник 1 та Заявник: СУІП ТОВ «Сперко Україна», 21027, Україна м.
-            Вінниця, вул. 600-річчя, 25, тел/факс (0432) 52 30 49. Виробник 2:
-            Лабораторіос Алкала Фарма, С.Л., Іспанія; Проспект Мадрид, 82,
-            Алкала де Енарес, 28802 Мадрид, Іспанія. Тел/факс (0432) 52 30 49.
-            РП МОЗ України: UA/1703/01/01 від 21.03.2019. НОКСПРЕЙ АКТИВ.
-            Лікарський засіб. Виробник та Заявник: СУІП ТОВ «Сперко Україна»,
-            21027, Україна м. Вінниця, вул. 600-річчя, 25, тел/факс (0432) 52 30
-            49. РП МОЗ України: UA/12675/01/01 від 05.12.2018. NOX-20191217.
+          <div class="noksprey_bottom_note-text">
+            1Під фразами «лікування нежитю» та «лікувати нежить» мається на
+            увазі симптоматичне лікування гострих респіраторних захворювань
+            (ГРЗ), що супроводжуються закладеністю носа, алергічного риніту чи
+            вазомоторного риніту. 2Згідно з інструкцією для медичного
+            застосування дія препарату Нокспрей починається через 5-10 хвилин
+            після упорскування в порожнину носа. 3Мається на увазі, що вартість
+            «Нокспрей, назальний спрей 0,05% - 10 мл» дорівнює вартості
+            «Акційний комплект: Нокспрей, назальний спрей 0,05% - 10 мл +
+            Нокспрей Аква, розчин ізотонічний - 20 мл» під час продажу від
+            виробника дистриб'юторам. Акція дійсна на всій території України
+            (окрім АР Крим та тимчасово окупованих територій Донецької та
+            Луганської областей) у період з 01.01.2020 року і до закінчення
+            акційного товару на складі виробника. Детальні умови акції можна
+            дізнатися на сайті sperco.ua. Інформація не є публічною офертою.
+            4Під «пробиває» мається на увазі зменшення набряку слизової оболонки
+            носа та відновлення носового дихання. 5В якості антисептичного
+            засобу.
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__copy">©2020 Всі права захищені.</div>
+        <div class="noksprey_bottom_warning-item">
+          Реклама медичних виробів та лікарських засобів. Перед застосуванням
+          медичних виробів та лікарських засобів обов'язково проконсультуйтеся з
+          лікарем і ознайомтеся з інструкціями для застосування та інструкціями
+          для медичного застосування відповідно. НОКСПРЕЙ АКВА. Медичний виріб;
+          Ізотонічний сольовий розчин, назальний спрей, 9 мг/мл, 20 мл.
+          Декларація про відповідність №UA.TR.753.D.20112362/IS/DEC/001 від
+          31.05.2018 року. НОКСПРЕЙ СІЛЬВЕР. Медичний виріб. Спрей назальний.
+          Склад: срібла протеїнат 1,25 мг (mg) в 1 мл (ml) (в перерахунку на 100
+          ppm чистого срібла) та допоміжні речовини. Декларація про
+          відповідність №DOC.MD.002/ver.1 від 25.06.2020 року. НОКСПРЕЙ.
+          Лікарський засіб. РП МОЗ України: UA/1703/01/01 від 21.03.2019.
+          НОКСПРЕЙ АКТИВ. Лікарський засіб. РП МОЗ України: UA/12675/01/01 від
+          05.12.2018.
+
+          <div class="noksprey_address">
+            Виробник та заявник лікарських засобів НОКСПРЕЙ та НОКСПРЕЙ АКТИВ та
+            медичних виробів НОКСПРЕЙ АКВА та НОКСПРЕЙ СІЛЬВЕР: СУІП ТОВ «Сперко
+            Україна», 21027, Україна м. Вінниця, вул. 600-річчя, 25, тел/факс
+            (0432) 52 30 49.
+
+            <div class="noksprey_nox">NOX-20201210.</div>
+
+            <div class="noksprey__copy">
+              ©2020 СУІП ТОВ «Сперко Україна». Всі права захищені.
+            </div>
+
+            <div class="noksprey__create">Сreated by Level Media</div>
+          </div>
+        </div>
       </div>
-      <div id="footer_fix" class="footer__block-img">
+      <div class="footer__block-img">
         <img class="footer__img" src="images/footer/footer__img.svg" alt="" />
       </div>
     </footer>
+
+    <!-- Pogination right menu -->
+    <div class="aside-menu">
+      <ul class="aside-menu__list">
+        <li class="aside-menu__item">
+          <a class="aside-menu__link scrollto" href="#aside-item-1">
+            <span class="aside-menu__title">Нокспрей</span>
+          </a>
+        </li>
+        <li class="aside-menu__item">
+          <a class="aside-menu__link scrollto" href="#aside-item-2"
+            ><span class="aside-menu__title">Нокспрей Актив</span></a
+          >
+        </li>
+        <li class="aside-menu__item">
+          <a class="aside-menu__link scrollto" href="#aside-item-3"
+            ><span class="aside-menu__title">Нокспрей Аква</span></a
+          >
+        </li>
+        <li class="aside-menu__item">
+          <a class="aside-menu__link scrollto" href="#aside-item-4"
+            ><span class="aside-menu__title">Акційний набір Нокспрей</span></a
+          >
+        </li>
+        <li class="aside-menu__item">
+          <a class="aside-menu__link scrollto" href="#aside-item-5"
+            ><span class="aside-menu__title">Нокспрей Сілвер</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Pogination right menu /end -->
     <script src="js/wow.min.js"></script>
+
     <script src="js/main.js"></script>
-
-    <!-- Modal window Noksprey Aqua  -->
-    <div id="popup1" class="popup">
-      <a class="popup__area" href="#header"></a>
-      <div class="popup__body">
-        <a href="#header" class="popup__close">
-          <img
-            class="popup__close-img"
-            src="images/close-btn.png"
-            alt="close btn"
-          />
-        </a>
-        <div class="popup__content">
-          <div class="popup__header">
-            <h1 class="popup__title">ІНСТРУКЦІЯ</h1>
-            <h2 class="popup__subtitle">
-              для застосування розчину ізотонічного для промивання носу
-            </h2>
-            <span class="popup-uppercase">НОКСПРЕЙ АКВА (NOXPREY AQUA)</span>
-          </div>
-          <div class="popup__item">
-            <h4 class="popup__item-title">Склад.</h4>
-            <p class="popup__item-text">
-              Цей назальний спрей є ізотонічним сольовим розчином, який містить
-              натрію хлорид; 1 мл містить натрію хлориду 9 мг, бензалконію
-              хлорид, воду очищену.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Опис.</h4>
-            <p class="popup__item-text">Прозорий безбарвний розчин.</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Форма випуску.</h4>
-            <p class="popup__item-text">Спрей назальний.</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Властивості.</h4>
-            <p class="popup__item-text">
-              Ефективно зволожує слизову оболонку носа, розріджує густий слиз,
-              розм'якшує сухі лусочки у носі та сприяє їх легкому видаленню.
-            </p>
-            <p class="popup__item-text">
-              Нокспрей Аква дозволяє знизити дозу і частоту застосування
-              судинозвужувальних засобів місцевої дії. Нокспрей Аква покращує
-              нюх та транспортну функцію миготливого епітелію, сприяє
-              відновленню носового дихання, скорочує період реабілітації.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Нокспрей Аква застосовується:</h4>
-            <ol class="popup__list">
-              <li class="popup__list-item">
-                Для гігієнічного догляду за порожниною носа, профілактики та у
-                комплексному лікуванні захворювань слизової оболонки носа та
-                придаткових пазух, що супроводжуються сухістю слизової оболонки
-                носа або утворенням слизу (риніти та синусити).
-              </li>
-              <li class="popup__list-item">
-                Як допоміжний засіб при застосуванні локальних
-                судинозвужувальних засобів.
-              </li>
-              <li class="popup__list-item">
-                Для збереження фізіологічних характеристик та усунення сухості
-                слизової оболонки носа при відповідних мікрокліматичних умовах,
-                зумовлених, наприклад, роботою кондиціонерів, у тому числі
-                автомобільних, або радіаторів центрального опалення, під час
-                повітряних перельотів, тощо.
-              </li>
-              <li class="popup__list-item">
-                Для очищення слизової оболонки носа від пилу, алергенів та інших
-                факторів забруднення повітря.
-              </li>
-              <li class="popup__list-item">
-                Для відновлення фізіологічного стану слизової оболонки після
-                операційних втручань у порожнині носа та носових пазухах.
-              </li>
-            </ol>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Спосіб застосування.</h4>
-            <p class="popup__item-text">
-              Край насадки флакона слід вводити у кожен носовий хід і різко
-              натиснути на флакон. Під час упорскування повітря бажано втягувати
-              носом. Не слід перевертати флакон при впорскуванні спрею. <br />
-              З лікувальною метою застосовують дорослим та дітям віком від 7
-              років по 2 впорскування 3-4 рази на добу, дітям віком 1-6 років –
-              по 1-2 впорскування 3-4 рази на добу. <br />З гігієнічною та
-              профілактичною метою застосовують дорослим та дітям від 7 років по
-              2 впорскування 1-3 рази на добу, дітям 1-6 років – по 1-2
-              впорскування 1-3 рази на добу. <br />Термін застосування становить
-              до 4 тижнів. При необхідності його можна повторити через місяць.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Особливості застосування.</h4>
-            <p class="popup__item-text">
-              Цей засіб можна застосовувати дітям віком від 1 року. Застосування
-              дітям дозволяється тільки в присутності дорослих осіб.<br />
-              Нокспрей Аква не впливає на швидкість психомоторних реакцій.<br />
-              Для попередження поширення інфекції не слід користуватися одним
-              флаконом кільком особам. <br />Не можна застосовувати цей засіб
-              особам із індивідуальною підвищеною чутливістю до його
-              компонентів. <br />Бензалконію хлорид може спричинити подразнення
-              слизової оболонки носа, особливо при довготривалому застосуванні.
-              <br />Досліджень із застосування Нокспрею Аква у вагітних не
-              проводилось.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Термін придатності.</h4>
-            <p class="popup__item-text">2 роки.</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Умови зберігання.</h4>
-            <p class="popup__item-text">
-              Зберігати при температурі не вище 25°С. Зберігати у недоступному
-              для дітей місці. Не слід застосовувати після закінчення терміну
-              придатності, зазначеного на упаковці.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">
-              Назва та місцезнаходження виробника.
-            </h4>
-            <p class="popup__item-text">
-              Зберігати при температурі не вище 25°С. Зберігати у недоступному
-              для дітей місці. Не слід застосовувати після закінчення терміну
-              придатності, зазначеного на упаковці.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">
-              Назва та місцезнаходження виробника.
-            </h4>
-            <ul class="popup__address-list">
-              <li class="popup__address-item">
-                Спільне українсько-іспанське підприємство «Сперко Україна».
-              </li>
-              <li class="popup__address-item">
-                21027, Україна, м. Вінниця, вул. 600-річчя, 25.
-              </li>
-              <li class="popup__address-item">Тел.: + 38(0432)52-30-36.</li>
-              <li class="popup__address-item">
-                E-mail:
-                <a class="popup__address-link" href="mailto:trade@sperco.com.ua"
-                  >trade@sperco.com.ua.</a
-                >
-              </li>
-              <li class="popup__address-item">
-                <a class="popup__address-link" href="www.sperco.ua"
-                  >www.sperco.ua</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal window Noksprey qua  /end -->
-
-    <!-- Modal window Noksprey  -->
-    <div id="popup2" class="popup">
-      <a class="popup__area" href="#header"></a>
-      <div class="popup__body">
-        <a href="#header" class="popup__close">
-          <img
-            class="popup__close-img"
-            src="images/close-btn.png"
-            alt="close btn"
-          />
-        </a>
-        <div class="popup__content">
-          <div class="popup__header">
-            <h1 class="popup__title">ІНСТРУКЦІЯ</h1>
-            <h2 class="popup__subtitle">
-              для медичного застосування лікарського засобу
-            </h2>
-            <span class="popup-uppercase">НОКСПРЕЙ (NOXPREY)</span>
-          </div>
-          <div class="popup__item">
-            <h4 class="popup__item-title">Склад.</h4>
-            <p class="popup__item-text">
-              діюча речовина: оксиметазолін; <br />1 мл розчину містить 0,5 мг
-              оксиметазоліну гідрохлориду; <br />допоміжні речовини: бензалконію
-              хлорид, левоментол, камфора рацемічна, евкаліптол, натрію
-              дигідрофосфат моногідрат, динатрію едетат, пропіленгліколь, вода
-              очищена.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Лікарська форма.</h4>
-            <p class="popup__item-text">
-              Назальний спрей. <br />Основні фізико-хімічні властивості:
-              безбарвна або злегка жовтувата прозора рідина зі специфічним
-              запахом.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Фармакотерапевтична група.</h4>
-            <p class="popup__item-text">
-              Протинабрякові та інші препарати для місцевого застосування при
-              захворюваннях порожнини носа. Симпатоміметики. Код АТХ R01А А05.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Фармакологічні властивості.</h4>
-            <p class="popup__item-text">
-              Фармакодинаміка. Нокспрей – α-адреноміметик, похідне імідазолу,
-              відноситься до групи місцевих судинозвужувальних засобів. При
-              введенні у порожнину носа препарат звужує артеріоли слизової
-              оболонки носової порожнини, внаслідок чого зменшується набряк,
-              гіперемія, ексудація, відновлюється носове дихання, зменшуються
-              виділення з носа. Нокспрей зменшує набряклість слизової оболонки
-              навколо отвору євстахієвої труби, покращуючи дренаж при євстахіїті
-              та середньому отиті. Ефірні масла, що входять до складу препарату,
-              сприяють усуненню відчуття подразнення слизової оболонки носа,
-              захищають її від надмірного висихання. Локальне звуження судин
-              слизової оболонки носа і придаткових пазух виникає через 5-10
-              хвилин після упорскування препарату у порожнину носа і триває
-              протягом 10‑12 годин.
-            </p>
-            <p class="popup__item-text">Фармакокінетика. Не вивчалася.</p>
-          </div>
-
-          <h4 class="popup__item-title">Клінічні характеристики.</h4>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Показання.</h4>
-            <p class="popup__item-text">
-              Гострі респіраторні захворювання, що супроводжуються закладеністю
-              носа, алергічний риніт, вазомоторний риніт, для відновлення
-              дренажу та носового дихання при захворюваннях придаткових пазух
-              порожнини носа та євстахіїті, для усунення набряку перед
-              діагностичними маніпуляціями у носових ходах.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Протипоказання.</h4>
-            <p class="popup__item-text">
-              Підвищена чутливість до оксиметазоліну, інших адреноміметиків або
-              до будь-яких компонентів препарату; атрофічний риніт; підвищений
-              внутрішньоочний тиск, особливо при закритокутовій глаукомі;
-              феохромоцитома; тяжкі форми серцево-судинних захворювань
-              (артеріальна гіпертензія, ішемічна хвороба серця), виражений
-              атеросклероз, гострі серцево-судинні захворювання або серцева
-              астма, тахісистолічні порушення серцевого ритму, стенокардія;
-              метаболічні порушення (гіпертиреоз, цукровий діабет, порфірія);
-              ниркова недостатність; після трансфеноїдальної гіпофізектомії або
-              іншого хірургічного втручання з відкриванням твердої мозкової
-              оболонки; запалення або пошкодження шкіри навколо носових ходів
-              або слизової оболонки носа. Протипоказане одночасне застосування
-              інгібіторів моноамінооксидази та протягом 2-х тижнів після
-              припинення лікування інгібіторами МАО, а також інших препаратів,
-              що сприяють підвищенню артеріального тиску. Гіпертрофія простати.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">
-              Взаємодія з іншими лікарськими засобами та інші види взаємодій.
-            </h4>
-            <p class="popup__item-text">
-              При застосуванні інших лікарських засобів до початку лікування цим
-              препаратом рекомендується звернутися за консультацією до лікаря.
-              Препарат не слід одночасно застосовувати з іншими місцевими
-              судинозвужувальними засобами (при будь-якому шляху введення
-              останніх), з іншими назальними деконгестантами, а також із
-              трициклічними антидепресантами, мапротиліном, оскільки можливе
-              підвищення артеріального тиску. Таке поєднане застосування можливе
-              лише після консультації з лікарем. При одночасному застосуванні з
-              інгібіторами моноамінооксидази (МАО) можливе підвищення
-              артеріального тиску. Не слід застосовувати Нокспрей одночасно або
-              протягом 2-х тижнів після припинення лікування інгібіторами МАО
-              (див. розділ «Протипоказання»). При одночасному застосуванні
-              оксиметазоліну з трициклічними антидепресантами можливе підвищення
-              ризику розвитку артеріальної гіпертензії та аритмії. Оксиметазолін
-              може знижувати ефективність β‑адреноблокаторів, метилдопи або
-              інших антигіпертензивних препаратів. При одночасному застосуванні
-              симпатоміметиків та антипаркінсонічних засобів можливе збільшення
-              токсичної дії на серцево-судинну систему.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Особливості застосування.</h4>
-            <p class="popup__item-text">
-              Край насадки флакона вводити у кожен носовий хід і різко натискати
-              1 раз на флакон. Під час впорскування повітря втягувати носом. Не
-              слід відхиляти голову назад і перевертати флакон при впорскуванні
-              спрею. Для попередження поширення інфекції не слід користуватися
-              одним флаконом кільком особам.
-            </p>
-            <p class="popup__item-text">
-              Слід уникати довготривалого застосування та передозування
-              препарату. Довготривале застосування протинабрякових засобів для
-              носа може призводити до послаблення їх дії. Зловживання цими
-              засобами може спричинити атрофію слизової оболонки та реактивну
-              гіперемію із медикаментозним ринітом, а також пошкодження епітелію
-              та інгібування його активності. Після застосування препарату
-              необхідний особливий нагляд за пацієнтами із хронічним ринітом та
-              у випадках усунення набряку перед діагностичними маніпуляціями.
-              Дози, вищі за рекомендовані, слід застосовувати тільки під
-              наглядом лікаря. Тривалість безперервного застосування препарату
-              не повинна перевищувати 7 діб.
-            </p>
-            <p class="popup__item-text">
-              Збереження набряку носових ходів після третьої доби застосування
-              може свідчити про наявність викривлення носової перегородки,
-              гнійного гаймориту, аденоїдів, алергічного риніту, стійкої
-              бактеріальної інфекції або інших нерозпізнаних захворювань, що
-              потребують консультації лікаря та спеціалізованої комплексної
-              терапії.
-            </p>
-            <p class="popup__item-text">
-              Слід проконсультуватися з лікарем до початку застосування цього
-              препарату у таких випадках: підвищений артеріальний тиск,
-              серцево-судинні захворювання, порушення з боку печінки або нирок.
-            </p>
-
-            <p class="popup__item-text">
-              Застосування у період вагітності або годування груддю.
-              Оксиметазолін не був пов'язаний із несприятливим завершенням
-              вагітності. Слід з обережністю застосовувати препарат хворим з
-              артеріальною гіпертензією або ознаками зменшення кровопостачання
-              плаценти. Часте або тривале застосування високих доз може
-              призводити до зменшення плацентарного кровотоку. У період
-              вагітності або годування груддю застосовування препарату можливе з
-              особливою обережністю у випадку, коли, на думку лікаря, очікувана
-              користь для матері перевищує потенційний ризик для плода/дитини.
-              Не допускається перевищення рекомендованого дозування. Невідомо,
-              чи оксиметазолін проникає у грудне молоко. У зв'язку з відсутністю
-              даних оксиметазолін не слід застосовувати у період годування
-              груддю.
-            </p>
-
-            <p class="popup__item-text">
-              Здатність впливати на швидкість реакції при керуванні
-              автотранспортом або іншими механізмами. Після тривалого
-              застосування препарату у дозах, що перевищують рекомендовані, не
-              можна виключити загального впливу на серцево-судинну систему. У
-              таких випадках здатність керувати транспортним засобом може
-              зменшитися.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Спосіб застосування та дози.</h4>
-            <p class="popup__item-text">
-              Дорослим та дітям віком від 6 років застосовувати по 1
-              впорскуванню у кожен носовий хід 2‑3 рази на добу. Дози, вищі за
-              рекомендовані, застосовувати тільки під наглядом лікаря. Препарат
-              застосовувати не довше 5-7 днів. Препарат можна застосовувати
-              повторно тільки через кілька днів.
-            </p>
-
-            <p class="popup__item-text">Діти.</p>
-
-            <p class="popup__item-text">
-              Препарат застосовувати дітям віком від 6 років.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Передозування.</h4>
-            <p class="popup__item-text">
-              При значному передозуванні або при випадковому застосуванні
-              внутрішньо можуть виникати такі симптоми: мідріаз, нудота,
-              блювання, ціаноз, підвищення температури, спазми, тахікардія,
-              аритмія, пальпітація, серцево-судинна недостатність, артеріальна
-              гіпертензія, задишка, дихальні розлади, набряк легень, зупинка
-              серця, підвищене потовиділення, ажитація, відчуття страху, судоми,
-              блідість, міоз, гіпосмія, галюцинації, психічні розлади, фізичний
-              дискомфорт. Вкрай рідко – пригнічення функцій центральної нервової
-              системи, що проявляється сонливістю, зниженням температури тіла,
-              брадикардією, артеріальною гіпотензією, колапсом, шоком,
-              дихальними розладами, апное, втратою свідомості з можливим
-              розвитком коми.
-            </p>
-            <p class="popup__item-text">
-              До клінічних проявів передозування у дітей належать симптоми з
-              боку центральної нервової системи (ЦНС): судоми та кома,
-              галюцинації, брадикардія, апное, артеріальна гіпертензія, що
-              змінюється гіпотензією.
-            </p>
-            <p class="popup__item-text">
-              Невідкладні заходи: у випадку підозрюваного передозування
-              оксиметазоліном необхідна термінова госпіталізація до відділення
-              інтенсивної терапії. Необхідне промивання шлунка, прийом
-              активованого вугілля, штучна вентиляція легень при необхідності. У
-              випадку артеріальної гіпертензії необхідне застосування
-              вазодилататорів (фентоламін, нітропрусид натрію). Не слід
-              застосовувати вазопресорні засоби. У разі необхідності при
-              збудженні призначати бензодіазепіни, протисудомну терапію
-              проводити бензодіазепінами та/або барбітуратами. У тяжких випадках
-              може виникнути необхідність в інтубації трахеї та штучній
-              вентиляції легень.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Побічні реакції.</h4>
-            <p class="popup__item-text">
-              Дихальні, торакальні та середостінні розлади: дискомфорт або
-              подразнення у носі, роті та горлі, печіння або сухість слизової
-              оболонки носа, чхання, носова кровотеча, апное у новонароджених та
-              дітей молодшого віку (особливо у випадку передозування). Після
-              того, як ефект від застосування препарату закінчиться, може
-              спостерігатися відчуття сильної закладеності носа (реактивна
-              гіперемія).
-            </p>
-            <p class="popup__item-text">
-              З боку нервової системи: головний біль, нудота, запаморочення,
-              сонливість або безсоння, неспокій, знервованість, тривожність,
-              тремор, підвищена втомлюваність, судоми (особливо у дітей),
-              галюцинації (особливо у дітей).
-            </p>
-            <p class="popup__item-text">
-              З боку органів зору: подразнення, дискомфорт або почервоніння
-              очей, затуманений зір.
-            </p>
-            <p class="popup__item-text">
-              З боку серцево-судинної системи: місцеве назальне застосування
-              може спричинити системні ефекти (тахікардія, підвищення
-              артеріального тиску, пальпітація, відчуття серцебиття, біль у
-              серці), приплив крові до обличчя.
-            </p>
-            <p class="popup__item-text">
-              З боку імунної системи: алергічні реакції, у тому числі висипання,
-              свербіж, ангіоневротичний набряк.
-            </p>
-            <p class="popup__item-text">Загальні розлади: слабкість.</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Термін придатності.</h4>
-            <p class="popup__item-text">
-              3 роки.<br />Не слід застосовувати препарат після закінчення
-              терміну придатності, вказаного на упаковці.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Умови зберігання.</h4>
-            <p class="popup__item-text">
-              Зберігати при температурі не вище 30 °С. Зберігати у недоступному
-              для дітей місці.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Упаковка.</h4>
-            <p class="popup__item-text">
-              По 10 мл або 15 мл, або 20 мл у контейнерах полімерних із
-              пробками-розпилювачами та кришками з контролем першого розкриття у
-              картонній пачці.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Категорія відпуску.</h4>
-            <p class="popup__item-text">Без рецепта.</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Виробник 1.</h4>
-            <p class="popup__item-text">
-              Спільне українсько-іспанське підприємство «Сперко Україна».
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">
-              Місцезнаходження виробника та адреса місця провадження його
-              діяльності.
-            </h4>
-            <p class="popup__item-text">
-              21027, Україна, м. Вінниця, вул. 600-річчя, 25.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Виробник 2.</h4>
-            <p class="popup__item-text">Лабораторіос Алкала Фарма, С.Л.</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">
-              Місцезнаходження виробника та адреса місця провадження його
-              діяльності.
-            </h4>
-            <p class="popup__item-text">
-              Проспект Мадрид, 82, Алкала де Енарес, 28802 Мадрид, Іспанія.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Заявник.</h4>
-            <p class="popup__item-text">
-              Спільне українсько-іспанське підприємство «Сперко Україна».
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Mісцезнаходження виробника.</h4>
-            <p class="popup__item-text">
-              21027, Україна, м. Вінниця, вул. 600-річчя, 25.
-            </p>
-            <span class="popup__item-text">
-              Тел.: + 38(0432)52-30-36. E-mail:
-              <a class="popup__address-link" href="mailto:trade@sperco.com.ua"
-                >trade@sperco.com.ua.</a
-              ><br />
-              <a class="popup__address-link" href="www.sperco.ua"
-                >www.sperco.ua</a
-              >
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal window Noksprey qua  /end -->
-
-    <!-- Modal window Noksprey Activ  -->
-    <div id="popup3" class="popup">
-      <a class="popup__area" href="#header"></a>
-      <div class="popup__body">
-        <a href="#header" class="popup__close">
-          <img
-            class="popup__close-img"
-            src="images/close-btn.png"
-            alt="close btn"
-          />
-        </a>
-        <div class="popup__content">
-          <div class="popup__header">
-            <h1 class="popup__title">ІНСТРУКЦІЯ</h1>
-            <h2 class="popup__subtitle">
-              для медичного застосування лікарського засобу
-            </h2>
-            <span class="popup-uppercase">НОКСПРЕЙ АКТИВ (NOXPREY ACTIV)</span>
-          </div>
-          <div class="popup__item">
-            <h4 class="popup__item-title">Склад.</h4>
-            <p class="popup__item-text">
-              діюча речовина: оксиметазолін;<br />
-              1 мл розчину містить 0,5 мг оксиметазоліну гідрохлориду;
-            </p>
-            <p class="popup__item-text">
-              допоміжні речовини: бензалконію хлорид, левоментол, камфора
-              рацемічна, евкаліптол, натрію дигідрофосфат моногідрат, динатрію
-              едетат, пропіленгліколь, вода очищена.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Лікарська форма.</h4>
-            <p class="popup__item-text">
-              Спрей назальний. <br />Основні фізико-хімічні властивості:
-              безбарвна або злегка жовтувата прозора рідина зі специфічним
-              запахом.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Фармакотерапевтична група.</h4>
-            <p class="popup__item-text">
-              Протинабрякові та інші препарати для місцевого застосування при
-              захворюваннях порожнини носа. Симпатоміметики. Код АТХ R01А А05.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Фармакологічні властивості..</h4>
-            <p class="popup__item-text">
-              Фармакодинаміка. Нокспрей актив – α-адреноміметик, похідне
-              імідазолу, належить до групи місцевих судинозвужувальних засобів.
-              При введенні у порожнину носа препарат звужує артеріоли слизової
-              оболонки носової порожнини, внаслідок чого зменшується набряк,
-              гіперемія, ексудація, відновлюється носове дихання, зменшуються
-              виділення з носа. Нокспрей зменшує набряклість слизової оболонки
-              навколо отвору євстахієвої труби, покращуючи дренаж при євстахіїті
-              та середньому отиті. Ефірні масла, що входять до складу препарату,
-              сприяють усуненню відчуття подразнення слизової оболонки носа,
-              захищають її від надмірного висихання. Локальне звуження судин
-              слизової оболонки носа і придаткових пазух виникає через 5-10
-              хвилин після упорскування препарату у порожнину носа і триває
-              протягом 10-12 годин.
-            </p>
-            <p class="popup__item-text">Фармакокінетика. Не вивчалася..</p>
-          </div>
-
-          <h4 class="popup__item-title">Клінічні характеристики.</h4>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Показання.</h4>
-            <p class="popup__item-text">
-              Гострі респіраторні захворювання, що супроводжуються закладеністю
-              носа, алергічний риніт, вазомоторний риніт, для відновлення
-              дренажу та носового дихання при захворюваннях придаткових пазух
-              порожнини носа та євстахіїті, для усунення набряку перед
-              діагностичними маніпуляціями у носових ходах.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Протипоказання.</h4>
-            <p class="popup__item-text">
-              Підвищена чутливість до оксиметазоліну, інших адреноміметиків або
-              до будь-яких компонентів препарату; атрофічний риніт; підвищений
-              внутрішньоочний тиск, особливо при закритокутовій глаукомі;
-              феохромоцитома; тяжкі форми серцево-судинних захворювань
-              (артеріальна гіпертензія, ішемічна хвороба серця), виражений
-              атеросклероз, гострі серцево-судинні захворювання або серцева
-              астма, тахісистолічні порушення серцевого ритму, стенокардія;
-              метаболічні порушення (гіпертиреоз, цукровий діабет, порфірія);
-              ниркова недостатність; після трансфеноїдальної гіпофізектомії або
-              іншого хірургічного втручання з відкриванням твердої мозкової
-              оболонки; запалення або пошкодження шкіри навколо носових ходів
-              або слизової оболонки носа. Протипоказане одночасне застосування
-              інгібіторів моноамінооксидази (МАО) та протягом 2-х тижнів після
-              припинення лікування інгібіторами МАО, а також інших препаратів,
-              що спричиняють підвищення артеріального тиску. Гіпертрофія
-              простати.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Показання.</h4>
-            <p class="popup__item-text">
-              Гострі респіраторні захворювання, що супроводжуються закладеністю
-              носа, алергічний риніт, вазомоторний риніт, для відновлення
-              дренажу та носового дихання при захворюваннях придаткових пазух
-              порожнини носа та євстахіїті, для усунення набряку перед
-              діагностичними маніпуляціями у носових ходах.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">
-              Взаємодія з іншими лікарськими засобами та інші види взаємодій.
-            </h4>
-            <p class="popup__item-text">
-              При застосуванні інших лікарських засобів до початку лікування цим
-              препаратом рекомендується звернутися за консультацією до лікаря.
-              Препарат не слід одночасно застосовувати з іншими
-              судинозвужувальними засобами (при будь-якому шляху введення
-              останніх), з іншими назальними деконгестантами, а також із
-              трициклічними антидепресантами, мапротиліном, оскільки можливе
-              підвищення артеріального тиску. Таке поєднане застосування можливе
-              лише після консультації з лікарем. При одночасному застосуванні з
-              інгібіторами МАО можливе підвищення артеріального тиску. Не слід
-              застосовувати Нокспрей Актив одночасно або протягом 2-х тижнів
-              після припинення лікування інгібіторами МАО (див. розділ
-              «Протипоказання»). При одночасному застосуванні оксиметазоліну з
-              трициклічними антидепресантами можливе підвищення ризику розвитку
-              артеріальної гіпертензії та аритмії. Оксиметазолін може знижувати
-              ефективність β-адреноблокаторів, метилдопи або інших
-              антигіпертензивних препаратів. При одночасному застосуванні
-              симпатоміметиків та антипаркінсонічних засобів можливе збільшення
-              токсичної дії на серцево-судинну систему.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Показання.</h4>
-            <p class="popup__item-text">
-              Гострі респіраторні захворювання, що супроводжуються закладеністю
-              носа, алергічний риніт, вазомоторний риніт, для відновлення
-              дренажу та носового дихання при захворюваннях придаткових пазух
-              порожнини носа та євстахіїті, для усунення набряку перед
-              діагностичними маніпуляціями у носових ходах.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Особливості застосування.</h4>
-            <p class="popup__item-text">
-              Для правильного застосування спрею необхідно:
-            </p>
-            <ol class="popup__list">
-              <li class="popup__list-item">
-                Зняти захисний ковпачок із розпилювача. Перед першим
-                застосуванням препарату необхідно кілька разів натиснути на
-                розпилювач до появи аерозолю.
-              </li>
-              <li class="popup__list-item">
-                Ввести край розпилювача у носовий хід і провести впорскування,
-                натиснувши до упору на розпилювач вказівним і середнім пальцями.
-                Зробити необхідну кількість впорскувань у кожен носовий хід
-                (див. розділ «Спосіб застосування та дози»), при цьому не слід
-                закидати голову назад. Під час впорскування необхідно зробити
-                легкий вдих через ніс.
-              </li>
-              <li class="popup__list-item">
-                Після використання закрити розпилювач захисним ковпачком.
-              </li>
-            </ol>
-            <p class="popup__item-text">
-              Для попередження поширення інфекції не слід користуватися одним
-              флаконом кільком особам.
-            </p>
-            <p class="popup__item-text">
-              Слід уникати довготривалого застосування та передозування
-              препарату. Довготривале застосування протинабрякових засобів для
-              носа може призводити до послаблення їх дії. Зловживання цими
-              засобами може спричинити атрофію слизової оболонки та реактивну
-              гіперемію з медикаментозним ринітом, а також пошкодження епітелію
-              та інгібування його активності. Після застосування препарату
-              необхідний особливий нагляд за пацієнтами із хронічним ринітом та
-              у випадках усунення набряку перед діагностичними маніпуляціями.
-              Дози, вищі за рекомендовані, слід застосовувати тільки під
-              наглядом лікаря. Тривалість безперервного застосування препарату
-              не повинна перевищувати 7 діб.
-            </p>
-            <p class="popup__item-text">
-              Збереження набряку носових ходів після третьої доби застосування
-              може свідчити про наявність викривлення носової перегородки,
-              гнійного гаймориту, аденоїдів, алергічного риніту, стійкої
-              бактеріальної інфекції або інших нерозпізнаних захворювань, що
-              потребують консультації лікаря та спеціалізованої комплексної
-              терапії.
-            </p>
-            <p class="popup__item-text">
-              Слід проконсультуватися з лікарем до початку застосування цього
-              препарату у таких випадках: підвищений артеріальний тиск,
-              серцево-судинні захворювання, порушення з боку печінки або нирок.
-            </p>
-
-            <p class="popup__item-text">
-              Застосування у період вагітності або годування груддю.
-              Оксиметазолін не був пов'язаний із несприятливим закінченням
-              вагітності. Слід з обережністю застосовувати препарат хворим із
-              артеріальною гіпертензією або ознаками зменшення кровопостачання
-              плаценти. Часте або тривале застосування високих доз може
-              призводити до зменшення плацентарного кровотоку. У період
-              вагітності або годування груддю застосовувати препарат можна лише
-              з особливою обережністю у випадку, коли на думку лікаря очікувана
-              користь для матері перевищує потенційний ризик для плода/дитини.
-              Не допускається перевищення рекомендованого дозування.
-            </p>
-
-            <p class="popup__item-text">
-              Невідомо, чи оксиметазолін потрапляє у грудне молоко. У зв'язку з
-              відсутністю даних, оксиметазолін не слід застосовувати у період
-              годування груддю.
-            </p>
-
-            <p class="popup__item-text">
-              Здатність впливати на швидкість реакції при керуванні
-              автотранспортом або іншими механізмами. Після тривалого
-              застосування препарату у дозах, що перевищують рекомендовані, не
-              можна виключити загального впливу на серцево-судинну систему. У
-              таких випадках здатність керувати транспортним засобом може
-              зменшитися.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Спосіб застосування.</h4>
-            <p class="popup__item-text">
-              Дорослим та дітям віком від 6 років застосовувати по 1
-              впорскуванню у кожен носовий хід 2-3 рази на добу. Дози, вищі за
-              рекомендовані, застосовувати тільки під наглядом лікаря. Препарат
-              застосовувати не довше 5-7 днів. Препарат можна застосовувати
-              повторно тільки через кілька днів.
-            </p>
-
-            <p class="popup__item-text">
-              Діти. Препарат застосовувати дітям віком від 6 років.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Передозування.</h4>
-            <p class="popup__item-text">
-              При значному передозуванні або при випадковому застосуванні
-              внутрішньо можуть виникати такі симптоми: мідріаз, нудота,
-              блювання, ціаноз, підвищення температури, спазми, тахікардія,
-              аритмія, пальпітація, серцево-судинна недостатність, артеріальна
-              гіпертензія, задишка, дихальні розлади, набряк легень, зупинка
-              серця, підвищене потовиділення, ажитація, відчуття страху, судоми,
-              блідість, міоз, гіпосмія, галюцинації, психічні розлади, фізичний
-              дискомфорт; дуже рідко – пригнічення функцій центральної нервової
-              системи (ЦНС), що проявляється сонливістю, зниженням температури
-              тіла, брадикардією, артеріальною гіпотензією, колапсом, шоком,
-              дихальними розладами, апное, втратою свідомості з можливим
-              розвитком коми.
-            </p>
-            <p class="popup__item-text">
-              До клінічних проявів передозування у дітей належать симптоми з
-              боку ЦНС: судоми та кома, галюцинації, брадикардія, апное,
-              артеріальна гіпертензія, що змінюється гіпотензією.
-            </p>
-            <p class="popup__item-text">
-              Невідкладні заходи: у випадку підозрюваного передозування
-              оксиметазоліном необхідна термінова госпіталізація до відділення
-              інтенсивної терапії. Необхідне промивання шлунка, прийом
-              активованого вугілля, штучна вентиляція легень за необхідності. У
-              випадку артеріальної гіпертензії необхідне застосування
-              вазодилататорів (фентоламін, нітропрусид натрію). Не слід
-              застосовувати вазопресорні засоби. У разі необхідності при
-              збудженні призначати бензодіазепіни, протисудомну терапію
-              проводити бензодіазепінами та/або барбітуратами. У тяжких випадках
-              може виникнути необхідність в інтубації трахеї та штучній
-              вентиляції легень.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Побічні реакції.</h4>
-            <p class="popup__item-text">
-              Дихальні, торакальні та середостінні розлади: дискомфорт або
-              подразнення у носі, роті та горлі, печіння або сухість слизової
-              оболонки носа, чхання, носова кровотеча, апное у новонароджених та
-              дітей молодшого віку (особливо у випадку передозування). Після
-              того, як ефект від застосування препарату закінчиться, може
-              спостерігатися відчуття сильної закладеності носа (реактивна
-              гіперемія).
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Умови зберігання.</h4>
-            <p class="popup__item-text">
-              Зберігати при температурі не вище 25°С. Зберігати у недоступному
-              для дітей місці. Не слід застосовувати після закінчення терміну
-              придатності, зазначеного на упаковці.
-            </p>
-
-            <p class="popup__item-text">
-              З боку нервової системи: головний біль, нудота, запаморочення,
-              сонливість або безсоння, неспокій, знервованість, тривожність,
-              тремор, підвищена втомлюваність, судоми (особливо у дітей),
-              галюцинації (особливо у дітей).
-            </p>
-
-            <p class="popup__item-text">
-              З боку органів зору: подразнення, дискомфорт або почервоніння
-              очей, затуманений зір.
-            </p>
-
-            <p class="popup__item-text">
-              З боку серцево-судинної системи: місцеве назальне застосування
-              може спричинити системні ефекти (тахікардія, підвищення
-              артеріального тиску, пальпітація, відчуття серцебиття, біль у
-              серці), приплив крові до обличчя.
-            </p>
-
-            <p class="popup__item-text">
-              З боку імунної системи: алергічні реакції, у тому числі висипання,
-              свербіж, ангіоневротичний набряк.
-            </p>
-
-            <p class="popup__item-text">Загальні розлади: слабкість.</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Термін придатності.</h4>
-            <p class="popup__item-text">
-              3 роки.<br />
-              Не застосовувати препарат після закінчення терміну придатності,
-              вказаного на упаковці.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Умови зберігання.</h4>
-            <p class="popup__item-text">
-              Зберігати при температурі не вище 30 ˚ С. Зберігати у недоступному
-              для дітей місці.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Упаковка.</h4>
-            <p class="popup__item-text">
-              По 10 мл у контейнері полімерному з насосом з розпилювачем у
-              картонній пачці.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Категорія відпуску.</h4>
-            <p class="popup__item-text">Без рецепта.</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Виробник.</h4>
-            <p class="popup__item-text">
-              Спільне українсько-іспанське підприємство «Сперко Україна».
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Mісцезнаходження виробника.</h4>
-            <p class="popup__item-text">
-              21027, Україна, м. Вінниця, вул. 600-річчя, 25.
-            </p>
-            <span class="popup__item-text">
-              Тел.: + 38(0432)52-30-36. E-mail:
-              <a class="popup__address-link" href="mailto:trade@sperco.com.ua"
-                >trade@sperco.com.ua.</a
-              ><br />
-              <a class="popup__address-link" href="www.sperco.ua"
-                >www.sperco.ua</a
-              >
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal window Noksprey activ  /end -->
-
-    <!-- Modal window Noksprey Silver  -->
-    <div id="popup4" class="popup">
-      <a class="popup__area" href="#header"></a>
-      <div class="popup__body">
-        <a href="#header" class="popup__close">
-          <img
-            class="popup__close-img"
-            src="images/close-btn.png"
-            alt="close btn"
-          />
-        </a>
-        <div class="popup__content">
-          <div class="popup__header">
-            <h1 class="popup__title">ІНСТРУКЦІЯ</h1>
-            <h2 class="popup__subtitle">для застосування спрею назального</h2>
-            <span class="popup-uppercase">НОКСПРЕЙ СІЛЬВЕР</span>
-          </div>
-          <div class="popup__item">
-            <h4 class="popup__item-title">Склад:</h4>
-            <p class="popup__item-text">
-              срібла протеїнат 1,25 мг (mg) в 1 мл (ml) (в перерахунку на 100
-              ppm чистого срібла); допоміжні речовини: декспантенол, вода
-              очищена.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Опис виробу.</h4>
-            <p class="popup__item-text">
-              Прозорий розчин жовто-коричневого кольору.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Форма випуску.</h4>
-            <p class="popup__item-text">Спрей назальний.</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Властивості.</h4>
-            <p class="popup__item-text">
-              Колоїдне срібло - срібла протеїнат - є універсальним антимікробним
-              засобом з широким спектром дії. Іони срібла, що входять до складу
-              назального спрею Нокспрей Сільвер, мають антисептичні властивості,
-              вони здатні пригнічувати розмноження або спричиняти загибель
-              більшості бактерій та вірусів (в тому числі вірусу грипу), а також
-              проявляти протигрибкову активність. Протимікробний ефект
-              зумовлений здатністю іонів срібла адсорбуватися на поверхні
-              мікробної клітини, проходити крізь мембрану і повністю блокувати
-              дію сульфгідрильних груп ферментних систем мікроорганізму, що
-              порушує його життєдіяльність. Крім того, іони срібла атакують і
-              руйнують молекули ДНК мікробів, що призводить до неможливості їх
-              розмноження. Завдяки цим внутрішньоклітинним механізмам дії
-              протягом останніх декількох десятиліть стійкості бактерій до іонів
-              срібла не спостерігалося. Декспантенол сприяє регенерації
-              пошкодженої слизової оболонки носа, а також зволожує її та зменшує
-              подразнення.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Нокспрей Сільвер застосовується:</h4>
-            <p class="popup__item-text">
-              - як антисептичний засіб у комплексному лікуванні гострих та
-              хронічних інфекційно-запальних процесів носової порожнини та
-              придаткових пазух носа, у тому числі ринітів, риносинуситів,
-              аденоїдитів.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Протипоказання.</h4>
-            <p class="popup__item-text">
-              Дитячий вік до 1-го року. Підвищена індивідуальна чутливість до
-              компонентів засобу.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Спосіб застосування.</h4>
-            <p class="popup__item-text">
-              Ретельно очистити ніс. Струснути контейнер і зняти захисний
-              ковпачок. Перед першим застосуванням необхідно кілька разів
-              натиснути на розпилювач до появи аерозолю. Ввести край розпилювача
-              у носовий хід і провести впорскування, натиснувши до упору на
-              розпилювач вказівним і середнім пальцями. Не слід закидати голову
-              назад і перевертати контейнер при впорскуванні спрею. Під час
-              впорскування необхідно зробити легкий вдих через ніс.
-              Застосовувати по одному впорскуванню у кожний носовий хід 2-3 рази
-              на добу. Звичайний курс застосування становить 5–10 днів; за
-              рекомендацією лікаря його можна подовжити до 3 тижнів. При
-              місцевому застосуванні срібла протеїнат не має загальної системної
-              дії.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Особливості застосування.</h4>
-            <p class="popup__item-text">
-              Цей медичний виріб можна застосовувати дітям віком від 1-го року.
-              Застосування дітям дозволяється тільки в присутності дорослих
-              осіб. Не допускати потрапляння розчину в очі. При випадковому
-              потраплянні в очі промити великою кількістю проточної води. Перед
-              застосуванням невелику кількість засобу нанести на шкіру в ділянці
-              ліктьового згину для виявлення можливої індивідуальної
-              непереносимості. При виникненні симптомів індивідуальної
-              непереносимості (подразнення, печіння, свербіж шкіри) промити
-              місце нанесення великою кількістю води, відмовитися від
-              застосування виробу і при необхідності звернутися до лікаря. Для
-              попередження поширення інфекції не слід користуватися одним
-              контейнером кільком особам. Дотримуйтесь рекомендованих доз і
-              способу застосування виробу. Срібла протеїнат може спричинити
-              подразнення слизової оболонки носа, особливо при довготривалому
-              застосуванні. Нокспрей Сільвер, спрей назальний не слід
-              застосовувати у період вагітності або годування груддю, оскільки
-              не має достатньо даних щодо застосування срібло-вмісних засобів у
-              ці періоди.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Термін придатності.</h4>
-            <p class="popup__item-text">
-              2 роки.<br />
-              Термін придатності розчину після першого відкриття контейнера – не
-              більше 4 тижнів.
-            </p>
-          </div>
-          <div class="popup__item">
-            <h4 class="popup__item-title">Умови зберігання.</h4>
-            <p class="popup__item-text">
-              Зберігати при температурі не вище 25 °С в захищеному від світла
-              місці. Зберігати в недоступному для дітей місці.
-            </p>
-          </div>
-          <div class="popup__item">
-            <h4 class="popup__item-title">Упаковка.</h4>
-            <p class="popup__item-text">
-              По 10 мл (ml) у контейнері з насосом з розпилювачем у пачці.
-            </p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">Засторога!</h4>
-            <p class="popup__item-text">
-              Не слід застосовувати після закінчення терміну придатності,
-              зазначеного на упаковці або по завершенню 4 тижнів після першого
-              відкриття контейнера.
-            </p>
-
-            <p class="popup__item-text">Для індивідуального застосування.</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">
-              Дата виготовлення та номер партії:
-            </h4>
-            <p class="popup__item-text">вказано на упаковці.</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">
-              Дата останнього перегляду інструкції (відповідає даті
-              затвердження): 14.04.2020
-            </h4>
-            <p class="popup__item-text">14.04.2020</p>
-          </div>
-
-          <div class="popup__item">
-            <h4 class="popup__item-title">
-              Назва та місцезнаходження виробника.
-            </h4>
-            <ul class="popup__address-list">
-              <li class="popup__address-item">
-                Спільне українсько-іспанське підприємство «Сперко Україна».
-              </li>
-              <li class="popup__address-item">
-                21027, Україна, м. Вінниця, вул. 600-річчя, 25.
-              </li>
-              <li class="popup__address-item">Тел.: + 38(0432)52-30-36.</li>
-              <li class="popup__address-item">
-                E-mail:
-                <a class="popup__address-link" href="mailto:trade@sperco.com.ua"
-                  >trade@sperco.com.ua.</a
-                >
-              </li>
-              <li class="popup__address-item">
-                <a class="popup__address-link" href="www.sperco.ua"
-                  >www.sperco.ua</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal window Noksprey qua  /end -->
   </body>
 </html>
