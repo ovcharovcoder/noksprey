@@ -479,41 +479,17 @@
 }
 
 // Modal window
-
-.popup {
+.popup-w {
   position: fixed;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  visibility: hidden;
   z-index: 10;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transition: all 0.8s ease 0s;
 }
 
-.popup:target {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup:target .popup__content {
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
-
-.popup__area {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.popup__body {
+.popup-w__body {
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -521,73 +497,44 @@
   padding: 30px 10px;
 }
 
-.popup__content {
+.popup-w__content {
   background-color: $white;
-  color: $default;
-  font-size: 14px;
-  max-width: 65%;
-  padding: 40px;
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-  transform: translate(0px, 100%);
+  color: $black;
+  max-width: 600px;
+  padding: 30px;
+  position: relative;
 }
 
-.popup__header {
+.popup-w__title {
+  font-size: 40px;
+  margin-bottom: 10px;
   text-align: center;
-  font-size: 20px;
-}
-
-.popup__title {
-  text-transform: uppercase;
   font-weight: 700;
 }
 
-.popup__subtitle {
-  font-weight: 700;
-}
-
-.popup-uppercase {
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.popup__item-title {
-  font-weight: 700;
-}
-
-.popup__item {
-  margin-top: 20px;
-}
-
-.popup__list {
-  list-style-type: disc;
-  margin-left: 10px;
-}
-
-.popup__list-item {
-  margin-left: 10px;
-}
-
-.popup__address-list {
-  list-style: none;
-}
-
-.popup__address-link {
-  color: #ff8562;
-}
-
-.popup__close {
-  position: fixed;
+.popup-w__close {
+  position: absolute;
   right: 30px;
   top: 30px;
+  width: 30px;
+  height: 30px;
 }
 
-.popup__close-img {
-  width: 25px;
-  height: 25px;
+.popup-close {
+  cursor: pointer;
+}
+
+.popup-w__close-img {
+  width: 30px;
+  height: 30px;
+}
+
+.popup-w__button {
+  text-align: center;
 }
 
 // Pagination right menu
+
 .aside-menu {
   position: fixed;
   top: 50%;
@@ -681,7 +628,7 @@
   /* Nav icon styles */
   position: relative;
   z-index: 30;
-  width: 30px;
+  width: 40px;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -692,7 +639,7 @@
 .mobile-nav-button__icon {
   display: block;
   position: relative;
-  width: 30px;
+  width: 40px;
   height: 5px;
   background-color: #ed1622;
 }
@@ -701,7 +648,7 @@
 .mobile-nav-button__icon::before {
   position: absolute;
   content: "";
-  width: 30px;
+  width: 40px;
   height: 5px;
   background-color: #ed1622;
   /* Трансформация при закрывании */

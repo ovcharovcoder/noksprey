@@ -29,7 +29,7 @@ E-mail автора: datoshcode@gmail.com;
 
   <body>
     <!-- Header -->
-    <header class="header">
+    <header id="header" class="header">
       <div class="header__inner">
         <div class="header__item">
           <a class="header__logo-link" href="">
@@ -43,14 +43,14 @@ E-mail автора: datoshcode@gmail.com;
                 <a class="header__menu-link" href="#">Про Нокспрей</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="instruction.html"
+                <a class="header__menu-link" href="instructions.html"
                   >Інструкції</a
                 >
               </li>
             </ul>
           </nav>
           <div class="header__find">
-            <a class="header__find-link" href="buy.html">Знайти Нокспрей</a>
+            <a class="header__find-link" href="find.html">Знайти Нокспрей</a>
           </div>
           <!-- Mobile navigation button -->
           <button class="mobile-nav-button" type="button">
@@ -834,7 +834,75 @@ E-mail автора: datoshcode@gmail.com;
     </div>
     <!-- Pogination right menu /end -->
     <script src="js/wow.min.js"></script>
-
     <script src="js/main.js"></script>
+
+    <!-- Modal window Noksprey Aqua  -->
+    <div id="popupW" class="popup-w">
+      <div class="popup-w__body">
+        <a
+          class="popup-w__close popup-close"
+          onclick="document.getElementById('popupW').style.display='none';"
+        >
+          <img
+            class="popup-w__close-img"
+            src="images/close-btn.png"
+            alt="close btn"
+          />
+        </a>
+
+        <div class="popup-w__content">
+          <div class="popup-w__header">
+            <h1 class="popup-w__title">УВАГА!</h1>
+            <div class="popup-w__item">
+              <p class="popup-w__item-text">
+                Цей розділ сайту містить інформацію про рецептурні лікарські
+                засоби (назва, лікувальні властивості, характеристика, побічні
+                реакції, протипоказання тощо), заявником яких є СУІП ТОВ «Сперко
+                Україна» та призначений виключно для використання професіоналами
+                сфери охорони здоров'я у їх професійній діяльності.
+              </p>
+            </div>
+
+            <div class="popup-w__item">
+              <p class="popup-w__item-text">
+                Відкриваючи цей розділ Ви підтверджуєте, що є дипломованим
+                спеціалістом у сфері охорони здоров'я
+              </p>
+            </div>
+
+            <div class="popup-w__item">
+              <p class="popup-w__item-text">
+                *(надаючи відповідь, ви несете відповідальність за її
+                достовірність)
+              </p>
+            </div>
+
+            <div
+              class="popup-w__button noksprey__buttons instructions__button buy__btn"
+            >
+              <a
+                class="instructions__btn-link noksprey__btn-link btn-link-accent instructions-btn"
+                href="noxprey_child.html"
+                >Так</a
+              >
+
+              <a
+                class="instructions__btn-link noksprey__btn-link btn-link-accent instructions-btn popup-close"
+                onclick="document.getElementById('popupW').style.display='none';"
+                >Ні
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal window Noksprey qua  /end -->
+    <script>
+      var delay_popup = 1000;
+      setTimeout(
+        "document.getElementById('popupW').style.display='block'",
+        delay_popup
+      );
+    </script>
   </body>
 </html>
